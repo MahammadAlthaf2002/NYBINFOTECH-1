@@ -1,0 +1,17 @@
+Understand Browser Engine Workflow and DOM Structure
+Learned how a web browser processes HTML, CSS, and JavaScript to render web pages. Understood the role of the browser engine, parsing process
+, rendering workflow, and the structure of the Document Object Model (DOM) used to represent webpage elements.
+
+
+Practice JavaScript Integration in HTML Pages
+Practiced integrating JavaScript into HTML documents using inline scripts, internal script tags,
+ and external JavaScript files. Gained knowledge about how JavaScript interacts with webpage elements and improves webpage interactivity.
+
+
+Create Sample Programs Using Variables
+Developed simple JavaScript programs using variables to store and manipulate data. Practiced performing operations such as calculations, 
+string handling, and displaying output dynamically on webpages.
+
+
+Learn Variable Declaration Methods and Usage
+Learned different methods of declaring variables in JavaScript using var, let, and const. Understood
