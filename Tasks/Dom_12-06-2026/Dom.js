@@ -51,3 +51,5 @@ const courseCollection =
 document.getElementsByClassName("course");
 
 
+var  a = document.getElementsByid("title")
+console.log(a)
