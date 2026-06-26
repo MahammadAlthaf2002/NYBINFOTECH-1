@@ -34,9 +34,9 @@ sessionStorage.getItem("email");
 
 console.log(email);
 
-sessionStorage.removeItem(
-    "email"
-);
+// sessionStorage.removeItem(
+//     "email"
+// );
 
 try {
 

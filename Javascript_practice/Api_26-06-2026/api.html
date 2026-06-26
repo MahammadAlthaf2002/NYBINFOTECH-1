@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h2>Calculator</h2>
+
+<input type="text" id="display" readonly>
+<br><br>
+
+<button onclick="addValue('7')">7</button>
+<button onclick="addValue('8')">8</button>
+<button onclick="addValue('9')">9</button>
+<button onclick="addValue('/')">/</button>
+<br><br>
+
+<button onclick="addValue('4')">4</button>
+<button onclick="addValue('5')">5</button>
+<button onclick="addValue('6')">6</button>
+<button onclick="addValue('*')">*</button>
+<br><br>
+
+<button onclick="addValue('1')">1</button>
+<button onclick="addValue('2')">2</button>
+<button onclick="addValue('3')">3</button>
+<button onclick="addValue('-')">-</button>
+<br><br>
+
+<button onclick="addValue('0')">0</button>
+<button onclick="addValue('.')">.</button>
+<button onclick="calculate()">=</button>
+<button onclick="addValue('+')">+</button>
+<br><br>
+
+<button onclick="clearDisplay()">Clear</button>
+
+
+<div class="container">
+
+<h2>Simple Calculator</h2>
+
+<input type="number" id="num1" placeholder="Enter First Number">
+
+<input type="number" id="num2" placeholder="Enter Second Number">
+
+<select id="operator">
+
+<option value="+">Addition (+)</option>
+
+<option value="-">Subtraction (-)</option>
+
+<option value="*">Multiplication (*)</option>
+
+<option value="/">Division (/)</option>
+
+</select>
+
+<button onclick="calculate()">
+Calculate
+</button>
+
+<p id="result">
+Result :
+</p>
+
+</div>
+
+
+<h2>JavaScript Mini Project</h2>
+
+<button onclick="showData()">Load Student</button>
+
+<div id="output"></div>
+    <script src="./api.js"></script>
+</body>
+</html>
