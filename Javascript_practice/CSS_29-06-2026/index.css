@@ -1,0 +1,115 @@
+/* 
+. Universal Selector (*)
+Description
+
+The Universal Selector selects every single HTML element on the webpage. It is commonly used to apply common styles (such as removing default margins and padding) to all elements at once.h1 {
+All headings, paragraphs, lists, tables, etc., become blue.
+
+When to Use
+Reset margins and padding
+Apply a common font to the whole page
+Set box-sizing for every element
+
+
+--> Element Selector
+Description
+
+The Element Selector selects all HTML elements of the same type (tag name). Every occurrence of that tag will receive the specified styles. */
+
+/*  --->Class Selector (.)
+Description
+
+The Class Selector selects all HTML elements that have the same class name. A class can be assigned to multiple elements, making it useful for applying the same style across different parts of a webpage. */
+   
+/* 
+--->ID Selector (#)
+Description */
+
+/* The ID Selector selects one unique HTML element based on its ID. Each ID should be used only once on a webpage. */
+/*
+ Group Selector (,)
+Description */
+
+/* The Group Selector allows you to apply the same CSS styles to multiple selectors at once. It reduces code duplication and keeps your CSS cleaner. */
+
+h1{
+    background-color: red;
+    font-family: cursive;
+    color: blue;
+
+}
+
+/* Universal Selector */
+
+*{
+    font-family: cursive;}
+
+
+/* Element Selector */
+
+body{
+    background-color: rgb(199, 212, 204);
+}
+
+header{
+    background-color: navy;
+    color: white;
+    text-align: center;
+}
+
+h1{
+    color: white;
+}
+
+h2{
+    color: darkblue;
+}
+
+h3{
+    color: brown;
+}
+
+p{
+    color: black;
+}
+
+ul{
+    background-color: beige;
+}
+
+ol{
+    background-color: lightyellow;
+}
+
+table{
+    background-color: white;
+}
+
+
+/* Group Selector */
+
+h1, h2, h3{
+    text-align: center;
+}
+
+
+/* Class Selector */
+
+.skills{
+    background-color: lightgreen;
+}
+
+
+/* ID Selector */
+
+#about{
+    background-color: lightblue;
+}
+
+
+/* Child Selector */
+
+section > h2{
+    color: red;
+    text-align: left;
+}
