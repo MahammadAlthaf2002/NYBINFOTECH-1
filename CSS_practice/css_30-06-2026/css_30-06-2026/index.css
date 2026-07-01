@@ -1,0 +1,50 @@
+Child Selector
+
+/* descendant --> space
+direct child ---> > */
+
+
+/* descendant  */
+/* div p {
+    background-color: azure;
+} */
+
+/* direct child 
+ */
+
+ /* div
+├── p ✅ Direct child
+└── Span
+      └── p ❌ Grandchild */
+
+ /* div >p{
+    background-color: brown;
+ } */
+
+
+ /* .box > h1 {
+    
+    color: red;
+} */
+
+ /* h1 {
+    color: red;
+} */
+
+/* .box > button {
+    background: green;
+} */
+
+  /* sibiling selector  */
+
+
+ /* general sibling ~ */
+
+
+ /* adjacent sibiling + */
+
+
+ .box  > h1{
+    background-color: brown;
+}
+

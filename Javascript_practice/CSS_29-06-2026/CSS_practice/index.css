@@ -1,0 +1,19 @@
+/* Change the background color of the whole page to light gray.
+Make all text use the Arial font.
+Change only the main heading's text color to red and its background to black.
+Make every About Us heading dark blue.
+Give the card a light yellow background and 20px padding.
+Make both buttons have a green background, white text, and no border.
+Center all headings (h1, h2, and h3).
+Change only the paragraph directly inside the container to a light green background and dark green text.
+Do not change the paragraph inside the <section>.
+Change only the paragraph immediately after the main heading to a pink background and purple text.
+Make every paragraph that comes after the main heading italic.
+Give every paragraph 10px padding.
+Give every button 10px padding and 8px rounded corners.
+Change the footer to a dark gray background with white text. */
+
+
+h1{
+    background-attachment: light gray;
+}

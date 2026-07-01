@@ -1,0 +1,89 @@
+/* attribute
+
+An HTML attribute gives additional information about an element.
+attribute are src ,href , width , height , id , class, text , input, ::placeholder
+
+| Selector               | Meaning               |                        |
+| ---------------------- | --------------------- | ---------------------- |
+| `[attribute]`          | Attribute exists      |                        |
+| `[attribute="value"]`  | Exact value           |                        |
+| `[attribute~="value"]` | Space-separated value |                        |
+| `[attribute^="value"]` | Starts with           |                        |
+| `[attribute$="value"]` | Ends with             |                        |
+| `[attribute*="value"]` | partial value 
+
+| */
+
+/* exact value attribute  */
+input[type] {
+    border: 2px solid salmon;
+}
+
+
+
+input[type="password"] {
+    border: 2px solid salmon;
+}
+
+/* simple attribute */
+/* This selector checks 100% exact match. */
+
+input[type]{
+    border: 2px solid salmon;
+}
+
+/* simple and exact attribute */
+
+
+input[type][name ="submit"]{
+    border: 2px solid salmon;
+    background-color: brown;
+    color: black;
+}
+
+/* This selector checks 100% exact match. */
+a[href="facebook.com"]{
+    color: red;
+}
+
+/* Space-Separated Attribute Selector
+~= matches whole words separated by whitespace.
+It does not match partial words or substrings.
+It is commonly used with the class attribute, but it works with any attribute whose value is a space-separated list. */
+/* The browser conceptually splits the attribute value into words and checks whether any word exactly equals the value in the selector. */
+
+div[class~="red"]{
+border: 2px solid salmon;
+}
+
+
+/* Case Sensitivity */
+[data-role="Admin" i]{
+    color: brown;
+}
+
+/* Contains Selector/ partical value */
+/* The *= operator means:
+
+"Select any element whose attribute contains this text anywhere inside the value."
+
+Unlike the space-separated selector (~=), the *= selector does not care about word boundaries. 
+It simply searches for the specified characters anywhere in the attribute value. */
+
+[class*="button"]{
+    background:green;
+}
+
+/* Starts With Selector */
+
+a[href^="https"]{
+color:green;
+}
+
+
+/* Ends With Selector */
+
+a[href$=".pdf"]{
+color:red;
+}
+

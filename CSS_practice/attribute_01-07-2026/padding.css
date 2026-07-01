@@ -1,0 +1,55 @@
+body{
+    font-family:Arial;
+    background:#f2f2f2;
+}
+
+h1{
+    text-align:center;
+}
+
+div{
+    width:500px;
+    background:white;
+    margin:20px auto;
+    border:2px solid black;
+}
+
+/* Same padding all sides */
+
+.box1{
+    padding:20px;
+    background:lightblue;
+}
+
+/* Different paddings */
+
+.box2{
+    padding-top:40px;
+    padding-right:30px;
+    padding-bottom:50px;
+    padding-left:20px;
+    background:lightgreen;
+}
+
+/* Two values */
+
+.box3{
+    padding:30px 60px;
+    background:pink;
+}
+
+/* Three values */
+
+.box4{
+    padding:20px 60px 40px;
+    background:orange;
+}
+
+/* Four values */
+
+.box5{
+    padding:10px 20px 30px 40px;
+    background:violet;
+}
+
+

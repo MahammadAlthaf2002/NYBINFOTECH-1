@@ -1,0 +1,56 @@
+body{
+    font-family:Arial;
+    background:#eee;
+}
+
+div{
+    width:450px;
+    margin:20px auto;
+    padding:20px;
+    background:white;
+    font-size:20px;
+}
+
+.solid{
+    border:5px solid red;
+}
+
+.dashed{
+    border:5px dashed blue;
+}
+
+.dotted{
+    border:5px dotted green;
+}
+
+.double{
+    border:8px double orange;
+}
+
+.groove{
+    border:8px groove brown;
+}
+
+.ridge{
+    border:8px ridge purple;
+}
+
+.inset{
+    border:8px inset gray;
+}
+
+.outset{
+    border:8px outset black;
+}
+
+.mix{
+
+    border-top:6px solid red;
+
+    border-right:6px dashed blue;
+
+    border-bottom:6px dotted green;
+
+    border-left:6px double orange;
+
+}
