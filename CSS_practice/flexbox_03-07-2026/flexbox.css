@@ -1,0 +1,247 @@
+.container{
+
+    display:flex;
+      
+
+}
+
+/* flex direction ; row, column , row reverse , column reverse */
+
+.container1{
+
+    display: flex;
+     flex-direction : row;  
+}
+
+/* justify-content ; flex-start , flex-end , space-between , centre ,around  */
+.justify{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.justify1 {
+          display: flex;
+          flex-direction: column-reverse;
+
+}
+
+
+/* align-items */
+
+/* Controls alignment along the Cross Axis. */
+
+
+.justify2{
+    display: flex;
+  
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* 
+align-self
+
+align-self is used on a single flex item to override the align-items value set on the container. */
+#spl{
+    align-self: flex-end;
+}
+
+/* flex-wrap
+
+The flex-wrap property controls whether flex items stay on a single line or move to the next line when there isn't enough space. */
+
+/* Display  */
+
+/* in display two ways inline and block  */
+/* <!-- 
+A block element starts on a new line and occupies the full width available. --> */
+
+.box{
+    display:block;
+    background:skyblue;
+    margin:10px;
+    padding:20px;
+    border: 2px solid skyblue;
+}
+
+ul li{
+    width: 20px;
+    display: inline;
+     background:skyblue;
+    margin:20px;
+    padding:40px;
+    border: 2px solid slateblue;
+  
+}
+
+.box2{
+    display: inline-block;
+      height:80px;
+       width:120px;
+        text-align:center;
+         line-height:100px;
+           background:orange;
+}
+
+/* 
+ box-sizing Property
+The box-sizing property defines how the total width and height of an HTML element are calculated.
+ It determines whether padding and border are included inside the specified width and height or added outside them.
+
+Syntax
+box-sizing: content-box;
+or
+box-sizing: border-box; */
+
+/* box-sizing: content-box */
+
+/* The specified width and height apply only to the content. Padding and border are added outside that size. */
+
+.box3{
+    width:200px;
+    padding:20px;
+    border:5px solid;
+    background:orange;
+    box-sizing:content-box;
+    margin-bottom:20px;
+}
+
+.box4{
+    width:200px;
+    padding:20px;
+    border:5px solid;
+    background:lightgreen;
+    box-sizing:border-box;
+}
+
+/* Content Box
+
+Width = 250px
+
+----------------------------
+
+
+Border Box
+
+Width = 200px
+
+--------------------
+
+Even though both use width: 200px, 
+the first box becomes 250px wide, while the second remains 200px wide.
+
+Why Use border-box?
+Advantages
+Easier to calculate layouts.
+Width remains fixed even when padding or borders are added.
+Prevents unexpected overflow.
+Makes responsive designs simpler.
+
+Because of these benefits, many developers apply it globally:
+*/
+
+
+
+
+/* --> auto in CSS */
+
+/* The auto keyword in CSS lets the browser automatically calculate a value for a property. */
+ /* It is commonly used with properties such as width, height, margin, left, right, top, bottom, and grid or flex layouts.  */
+
+ .box5{
+     margin: auto;
+       text-align: center;
+    line-height: 100px;
+     background-color: lightblue;
+      width: 300px;
+    height: 100px;
+ }
+/* 
+ Values of position
+static (default)
+relative
+absolute
+fixed
+sticky
+
+The properties top, right, bottom, and left work with all position values except static.
+1. position: static (Default)
+
+A static element follows the normal document flow. top, left, right, and bottom have no effect. */
+
+.box6 {
+    position: static;
+    background: lightblue;
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+.box7{
+    display: inline;
+    background: lightblue;
+    border: 2px solid blue;
+    padding: 20px;
+}
+
+#box8{ position: relative;
+      left: 50px;
+    top: 20px;
+     width: 200px;
+     right: 50px;
+     bottom: 20px;
+
+}
+
+.box9{
+       display: inline;
+    background: lightblue;
+    border: 2px solid blue;
+    padding: 20px;
+
+}
+#box10{
+    position: absolute;
+   
+
+}
+
+.box11{
+   
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: red;
+    color: white;
+    padding: 15px;
+
+}
+
+.container9{
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    grid-template-rows:100px 100px;
+
+    gap:15px;
+
+    justify-items:center;
+
+    align-items:center;
+
+    border:2px solid black;
+}
+
+.boxx{
+    width:80px;
+    height:80px;
+    background:royalblue;
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+
