@@ -1,10 +1,13 @@
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Components from "../../React_Project_07-07-2026/src/pages/Components";
+
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-blue-100">
-      <h1 className="text-4xl font-bold text-blue-700">
-        Tailwind CSS is Working perfect! 🎉
-      </h1>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/component" element={<Components />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
