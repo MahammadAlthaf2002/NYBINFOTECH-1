@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Components from "./pages/Components";
 import Props from "./pages/Props";
 import Statemanagment from "./pages/Statemanagment";
+import Components1 from "./pages/components1";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
         <Route path="/components" element={<Components />} />
          <Route path="/props" element={<Props />} />
           <Route path="/statemanagment" element={<Statemanagment />} />
+       
       </Routes>
     </BrowserRouter>
   );
