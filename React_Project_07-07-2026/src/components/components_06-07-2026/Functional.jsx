@@ -1,5 +1,5 @@
 import React from "react";
-function Header(){
+function Functional(){
     return(
         <>
         <h1 className="p-8 text-20px">
@@ -9,4 +9,4 @@ function Header(){
         </>
     )
 }
-export default Header;
+export default Functional;

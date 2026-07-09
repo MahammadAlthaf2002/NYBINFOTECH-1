@@ -1,17 +1,17 @@
 import React from 'react'
-import Footer from '../props/Footer'
-import Header from '../props/Header'
+import Child1 from './Child1'
+import Child from './Child'
 
-const Props = () => {
+const Parent = () => {
   return (
     <div>
-        < Footer
+        <Child1
         name="Rahul"
         age={20}
          city="Hyderabad"
   course="React"
       />
-      <Header 
+      <Child
         name="Rahul"
         age={21}
         city="Hyderabad"
@@ -19,7 +19,7 @@ const Props = () => {
         skills={["HTML", "CSS", "JavaScript", "React"]}
       />
 
-      < Header
+      < Child
         name="Ali"
         age={22}
         city="Bengaluru"
@@ -31,4 +31,4 @@ const Props = () => {
   )
 }
 
-export default Props
+export default Parent

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Footer = (props) => {
+const Child1 = (props) => {
   return (
     <div>
       <h1>Name: {props.name}</h1>
@@ -11,4 +11,4 @@ const Footer = (props) => {
   )
 }
 
-export default Footer
+export default Child1

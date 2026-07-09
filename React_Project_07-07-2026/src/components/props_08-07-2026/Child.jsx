@@ -1,4 +1,5 @@
-function Student({ name, age, city, skills, isPassed }) {
+
+function Child ({ name, age, city, skills, isPassed }) {
   return (
     <div style={{ border: "1px solid gray", margin: "10px", padding: "10px" }}>
       <h2>Name: {name}</h2>
@@ -16,4 +17,4 @@ function Student({ name, age, city, skills, isPassed }) {
   );
 }
 
-export default Student;
+export default Child;
