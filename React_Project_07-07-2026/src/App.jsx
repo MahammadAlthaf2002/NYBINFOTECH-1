@@ -12,6 +12,8 @@ import OrConditionalPage from "./pages/ConditionalRenderings/OrConditionalPage";
 import SwitchConditionalPage from "./pages/ConditionalRenderings/SwitchConditionalPage";
 import OnClick from "./pages/EventHandling/OnClick";
 import OnDoubleClickEventPage from "./pages/EventHandling/OnDoubleClickEventPage";
+import TextBox from "./pages/Controlled_component_page/TextBox";
+import ObjectState from "./Controlled _Components/objectstate";
 function App() {
   return (
     <BrowserRouter>
@@ -46,7 +48,9 @@ function App() {
   path="/OnDoubleClickEvent"
   element={<OnDoubleClickEventPage />}
 />
+  <Route path="/TextBox" element={<TextBox />} />
 
+<Route path="/Objectstate" element={<ObjectStatecd />} />
 
       </Routes>
        
