@@ -1,0 +1,19 @@
+.container {
+    display:flex;
+}
+.sidebar{
+    width :150px;
+    background: lightblue;
+    padding:10px;
+
+}
+.card {
+    background: lightgreen;
+    padding:20px;
+    flex:1;
+    text-aligen :center
+}
+.card{
+    display:flex;
+    gap:10px;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login PAge</title>
+
+</head>
+<body>
+    <h2> Loging Page </h2>
+    <from>
+        <label> Email : </label><br>
+        <input type = "email" placeholder="Enter your Email" > <br>
+         <label> Password: </label><br>
+        <input type = "password" id ="password" placeholder="Enter your password" > <br>
+        <button type ="button"  onclick = "showpassword()">show /Hide</button> <br>
+        <input type ="Checkbox" id ="remember">
+        <label for = "rememeber">remember me</label> <br>
+        <a href ="#" >Forgot password ?</a> <br>
+        <button type ="submit" >Login</button>
+
+        </from>
+        <script>
+            function showpassword ()
+            {
+                let password = document.getElementById("Password")
+                if (password .type ==== "password"){
+                    password.type="type";
+
+                }else{
+                    password.type="password";
+
+                }
+            }
+        </script>
+    </from>
+    
+</body>
+</html>

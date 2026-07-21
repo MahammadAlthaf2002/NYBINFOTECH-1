@@ -1,0 +1,26 @@
+.card{
+    width100px;
+    border :1px Solid Black;
+    padding :10px;
+    text-align:center;
+
+}
+
+img {
+    width :19%;
+}
+
+button{
+    padding :8px 15px;
+    cursor:pointer;
+
+}
+
+.card.hover{
+    box-shadow : 0 0 10px gray;
+}
+
+button:hover{
+    background: blue;
+    colour:white;
+}

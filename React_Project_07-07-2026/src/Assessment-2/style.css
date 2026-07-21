@@ -1,0 +1,160 @@
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #007BFF, #6A0DAD);
+    color: white;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+}
+
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.logo h2 {
+    font-size: 28px;
+}
+
+
+
+.nav-link {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.nav-link li a {
+    color: red;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-link li a:hover {
+    color: yellow;
+}
+
+
+.hero-content {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    width: 70%;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+
+
+.Button {
+    display: flex;
+    gap: 20px;
+}
+
+
+
+.btn {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+
+
+.primary {
+    background-color: white;
+    color: black;
+}
+
+.primary:hover {
+    background-color: #f1f1f1;
+}
+
+
+
+.secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.secondary:hover {
+    background-color: white;
+    color: black;
+}
+
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-link {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-content h1 {
+        font-size: 35px;
+    }
+
+    .hero-content p {
+        width: 90%;
+        font-size: 17px;
+    }
+
+    .Button {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 180px;
+        text-align: center;
+    }
+}
