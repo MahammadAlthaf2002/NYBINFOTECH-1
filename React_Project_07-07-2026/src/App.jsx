@@ -18,8 +18,11 @@ import TextBox from "./pages/Controlled_component_page/TextBox";
 import UseEffect from "./pages/UseEffect_page_21-07-2026/UseEffect";
 import FetchApi3 from "./pages/AxiosApi/FetchApi3";
 
-// Change this import according to your folder name
-import FetchApi5 from "./pages/MiniAssessment/FetchApi5";
+
+import RegistrationForm1Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm1Page";
+
+import RegistrationForm2Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm2Page";
+import RegistrationFormTask from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
 
 function App() {
   return (
@@ -57,11 +60,7 @@ function App() {
           element={<FetchApi3 />}
         />
 
-        <Route
-          path="/FetchApi5"
-          element={<FetchApi5 />}
-        />
-
+      
         {/* Context API */}
         <Route
           path="/ContextApp"
@@ -122,7 +121,18 @@ function App() {
           path="/UseEffect1"
           element={<UseEffect />}
         />
-
+         <Route
+          path="/RegistrationFrom1Page"
+          element={<RegistrationForm1Page />}
+        />
+        <Route
+          path="/RegistrationFrom2Page"
+          element={<RegistrationForm2Page />}
+        />
+        <Route
+          path="/RegistrationFromTask"
+          element={<RegistrationFormTask />}
+        />
       </Routes>
     </BrowserRouter>
   );
