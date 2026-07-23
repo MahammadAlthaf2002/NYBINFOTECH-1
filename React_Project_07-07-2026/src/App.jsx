@@ -23,6 +23,7 @@ import RegistrationForm1Page from "./pages/Comtrolled_component_page_22-07-2026/
 
 import RegistrationForm2Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm2Page";
 import RegistrationFormTask from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
+import HocPage from "./pages/Hoc_page_23-07-2026/HocPage";
 
 function App() {
   return (
@@ -132,6 +133,10 @@ function App() {
         <Route
           path="/RegistrationFromTask"
           element={<RegistrationFormTask />}
+        />
+          <Route
+          path="/HocPage"
+          element={<HocPage/>}
         />
       </Routes>
     </BrowserRouter>
