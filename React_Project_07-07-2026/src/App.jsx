@@ -24,7 +24,10 @@ import RegistrationForm1Page from "./pages/Comtrolled_component_page_22-07-2026/
 import RegistrationForm2Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm2Page";
 import RegistrationFormTask from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
 import HocPage from "./pages/Hoc_page_23-07-2026/HocPage";
-
+import IfCondition from "./pages/CompleteRevision_24-07_2026/IfCondition";
+import TernaryOpertor1 from "./pages/CompleteRevision_24-07_2026/TernaryOpertor1";
+import Usee from "./pages/CompleteRevision_24-07_2026/Usee";
+import FinalProject1 from "./pages/MiniAssessment/Finalproject/FinalProject1";
 function App() {
   return (
     <BrowserRouter>
@@ -138,6 +141,23 @@ function App() {
           path="/HocPage"
           element={<HocPage/>}
         />
+           <Route
+          path="/IfCondition"
+          element={<IfCondition/>}
+        />
+             <Route
+          path="/TernaryOpertor1"
+          element={<TernaryOpertor1/>}
+        />
+             <Route
+          path="/Usee"
+          element={<Usee/>}
+        />
+                <Route
+          path="/FinalProject1:"
+          element={<FinalProject1/>}
+        />
+
       </Routes>
     </BrowserRouter>
   );
