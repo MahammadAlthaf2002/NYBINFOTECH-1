@@ -18,22 +18,25 @@ import TextBox from "./pages/Controlled_component_page/TextBox";
 import UseEffect from "./pages/UseEffect_page_21-07-2026/UseEffect";
 import FetchApi3 from "./pages/AxiosApi/FetchApi3";
 
-
 import RegistrationForm1Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm1Page";
-
 import RegistrationForm2Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm2Page";
 import RegistrationFormTask from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
-import HocPage from "./pages/Hoc_page_23-07-2026/HocPage";
+import HocPage from "./pages/Hoc_page_23-07_2026/HocPage";
 import IfCondition from "./pages/CompleteRevision_24-07_2026/IfCondition";
 import TernaryOpertor1 from "./pages/CompleteRevision_24-07_2026/TernaryOpertor1";
 import Usee from "./pages/CompleteRevision_24-07_2026/Usee";
 import FinalProject1 from "./pages/MiniAssessment/Finalproject/FinalProject1";
+
+// React.memo Example
+import MemoPage from "./memo27-07-2026/MemoPage";
+
+
 function App() {
   return (
     <BrowserRouter>
       <Routes>
 
-        {/* Home Page */}
+        {/* Home */}
         <Route path="/" element={<FetchApi2 />} />
 
         {/* Components */}
@@ -64,7 +67,6 @@ function App() {
           element={<FetchApi3 />}
         />
 
-      
         {/* Context API */}
         <Route
           path="/ContextApp"
@@ -120,42 +122,59 @@ function App() {
           element={<TextBox />}
         />
 
+        <Route
+          path="/RegistrationFrom1Page"
+          element={<RegistrationForm1Page />}
+        />
+
+        <Route
+          path="/RegistrationFrom2Page"
+          element={<RegistrationForm2Page />}
+        />
+
+        <Route
+          path="/RegistrationFromTask"
+          element={<RegistrationFormTask />}
+        />
+
         {/* useEffect */}
         <Route
           path="/UseEffect1"
           element={<UseEffect />}
         />
-         <Route
-          path="/RegistrationFrom1Page"
-          element={<RegistrationForm1Page />}
-        />
+
+        {/* HOC */}
         <Route
-          path="/RegistrationFrom2Page"
-          element={<RegistrationForm2Page />}
-        />
-        <Route
-          path="/RegistrationFromTask"
-          element={<RegistrationFormTask />}
-        />
-          <Route
           path="/HocPage"
-          element={<HocPage/>}
+          element={<HocPage />}
         />
-           <Route
+
+        {/* Complete Revision */}
+        <Route
           path="/IfCondition"
-          element={<IfCondition/>}
+          element={<IfCondition />}
         />
-             <Route
+
+        <Route
           path="/TernaryOpertor1"
-          element={<TernaryOpertor1/>}
+          element={<TernaryOpertor1 />}
         />
-             <Route
+
+        <Route
           path="/Usee"
-          element={<Usee/>}
+          element={<Usee />}
         />
-                <Route
-          path="/FinalProject1:"
-          element={<FinalProject1/>}
+
+        {/* Final Project */}
+        <Route
+          path="/FinalProject1"
+          element={<FinalProject1 />}
+        />
+
+        {/* React.memo */}
+        <Route
+          path="/MemoPage"
+          element={<MemoPage />}
         />
 
       </Routes>
