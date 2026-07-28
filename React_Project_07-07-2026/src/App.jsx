@@ -15,20 +15,20 @@ import SwitchConditionalPage from "./pages/ConditionalRenderings/SwitchCondition
 import OnClick from "./pages/EventHandling/OnClick";
 import OnDoubleClickEventPage from "./pages/EventHandling/OnDoubleClickEventPage";
 import TextBox from "./pages/Controlled_component_page/TextBox";
-import UseEffect from "./pages/UseEffect_page_21-07-2026/UseEffect";
-import FetchApi3 from "./pages/AxiosApi/FetchApi3";
-
-import RegistrationForm1Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm1Page";
+import UseEffect from "./pages/UseEffect_page_21-07-2026/UseEffect"
 import RegistrationForm2Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm2Page";
 import RegistrationFormTask from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
-import HocPage from "./pages/Hoc_page_23-07_2026/HocPage";
+
 import IfCondition from "./pages/CompleteRevision_24-07_2026/IfCondition";
 import TernaryOpertor1 from "./pages/CompleteRevision_24-07_2026/TernaryOpertor1";
 import Usee from "./pages/CompleteRevision_24-07_2026/Usee";
-import FinalProject1 from "./pages/MiniAssessment/Finalproject/FinalProject1";
+import Hook from "./pages/Hooks_page_28-07-2026/Hook";
+import UseFrom from "./pages/Hooks_page_28-07-2026/UseFrom";
+import WindowSize1 from "./pages/Hooks_page_28-07-2026/windowSize1";
+import WithAuth1 from "./pages/Hoc_28-07-2026/WithAuth1";
+import WithLoading1 from "./pages/Hoc_28-07-2026/WithLoading1";
 
-// React.memo Example
-import MemoPage from "./memo27-07-2026/MemoPage";
+
 
 
 function App() {
@@ -62,10 +62,6 @@ function App() {
           element={<FetchApi2 />}
         />
 
-        <Route
-          path="/FetchApi3"
-          element={<FetchApi3 />}
-        />
 
         {/* Context API */}
         <Route
@@ -122,11 +118,7 @@ function App() {
           element={<TextBox />}
         />
 
-        <Route
-          path="/RegistrationFrom1Page"
-          element={<RegistrationForm1Page />}
-        />
-
+       
         <Route
           path="/RegistrationFrom2Page"
           element={<RegistrationForm2Page />}
@@ -143,11 +135,7 @@ function App() {
           element={<UseEffect />}
         />
 
-        {/* HOC */}
-        <Route
-          path="/HocPage"
-          element={<HocPage />}
-        />
+      
 
         {/* Complete Revision */}
         <Route
@@ -165,17 +153,33 @@ function App() {
           element={<Usee />}
         />
 
-        {/* Final Project */}
+
+    
+
+      
         <Route
-          path="/FinalProject1"
-          element={<FinalProject1 />}
+          path="Hook"
+          element={<Hook />}
+        />
+        <Route
+          path="UseFrom"
+          element={<UseFrom />}
         />
 
-        {/* React.memo */}
-        <Route
-          path="/MemoPage"
-          element={<MemoPage />}
+          <Route
+          path="WindowSize1"
+          element={<WindowSize1 />}
         />
+            <Route
+          path="WithAuth1"
+          element={<WithAuth1 />}
+        />
+           <Route
+          path="WithLoading1"
+          element={<WithLoading1 />}
+        />
+
+
 
       </Routes>
     </BrowserRouter>
