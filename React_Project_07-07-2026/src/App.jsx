@@ -28,6 +28,13 @@ import WindowSize1 from "./pages/Hooks_page_28-07-2026/windowSize1";
 import WithAuth1 from "./pages/Hoc_28-07-2026/WithAuth1";
 import WithLoading1 from "./pages/Hoc_28-07-2026/WithLoading1";
 
+import AppPage from "./pages/PureComponent_page/AppPage";
+import EmployeePage from "./pages/PureComponent_page/EmployeePage";
+import ReactMemoPage from "./pages/ReactMemoPage/ReactMemoPage";
+import UseMemo from "./pages/ReactMemoPage/UseMemo";
+import Shopping from "./pages/ReactMemoPage/Shopping";
+import Count2 from "./pages/Countdowntimer/Count2";
+
 
 
 
@@ -171,13 +178,38 @@ function App() {
           element={<WindowSize1 />}
         />
             <Route
-          path="WithAuth1"
-          element={<WithAuth1 />}
+          path="AppPage"
+          element={<AppPage/>}
         />
-           <Route
-          path="WithLoading1"
-          element={<WithLoading1 />}
+              
+                 <Route
+          path="EmployeePage"
+          element={<EmployeePage/>}
         />
+                     <Route
+          path="ReactMemoPage"
+          element={<ReactMemoPage/>}
+        />
+                      <Route
+          path="ReactMemoPage"
+          element={<ReactMemoPage/>}
+        />
+                            <Route
+          path="UseMemo"
+          element={<UseMemo/>}
+        />
+
+                       <Route
+          path="Shopping"
+          element={<Shopping/>}
+        />
+                         <Route
+          path="count2"
+          element={<Count2/>}
+        />
+
+       
+       
 
 
 
