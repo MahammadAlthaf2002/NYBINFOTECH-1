@@ -28,14 +28,18 @@ import WindowSize1 from "./pages/Hooks_page_28-07-2026/windowSize1";
 import WithAuth1 from "./pages/Hoc_28-07-2026/WithAuth1";
 import WithLoading1 from "./pages/Hoc_28-07-2026/WithLoading1";
 
-import AppPage from "./pages/PureComponent_page/AppPage";
-import EmployeePage from "./pages/PureComponent_page/EmployeePage";
-import ReactMemoPage from "./pages/ReactMemoPage/ReactMemoPage";
-import UseMemo from "./pages/ReactMemoPage/UseMemo";
-import Shopping from "./pages/ReactMemoPage/Shopping";
-import Count2 from "./pages/Countdowntimer/Count2";
+// import AppPage from "./pages/PureComponent_page/AppPage";
+// import EmployeePage from "./pages/PureComponent_page/EmployeePage";
+// import ReactMemoPage from "./pages/ReactMemoPage/ReactMemoPage";
+// import UseMemo from "./pages/ReactMemoPage/UseMemo";
+// import Shopping from "./pages/ReactMemoPage/Shopping";
 
+import PortalPage from "./pages/PortalPage/PortalPage";
+import PortalPage1 from "./pages/PortalPage/PortalPage1";
 
+import PortalPage2 from "./pages/PortalPage/PortalPage2";
+
+import Student1 from "./pages/Eventhandlerpage/Student1";
 
 
 function App() {
@@ -177,20 +181,20 @@ function App() {
           path="WindowSize1"
           element={<WindowSize1 />}
         />
-            <Route
+            {/* <Route
           path="AppPage"
           element={<AppPage/>}
         />
               
                  <Route
           path="EmployeePage"
-          element={<EmployeePage/>}
-        />
-                     <Route
+          element={<EmployeePage/>} */}
+      
+                     {/* <Route
           path="ReactMemoPage"
           element={<ReactMemoPage/>}
-        />
-                      <Route
+        /> */}
+                      {/* <Route
           path="ReactMemoPage"
           element={<ReactMemoPage/>}
         />
@@ -202,13 +206,25 @@ function App() {
                        <Route
           path="Shopping"
           element={<Shopping/>}
+        /> */}
+      
+                         <Route
+          path="PortalPage"
+          element={<PortalPage/>}
         />
                          <Route
-          path="count2"
-          element={<Count2/>}
+          path="PortalPage1"
+          element={<PortalPage1/>}
         />
-
+                         <Route
+          path="PortalPage2"
+          element={<PortalPage2/>}
+        />
        
+                       <Route
+          path="Student1"
+          element={<Student1/>}
+        />
        
 
 
