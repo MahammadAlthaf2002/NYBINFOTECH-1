@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 
 import ComponentsPage from "./pages/components_06-07-2026/ComponentsPage";
 import PropsPage from "./pages/props_07-07-2026/PropsPage";
@@ -40,15 +40,32 @@ import PortalPage1 from "./pages/PortalPage/PortalPage1";
 import PortalPage2 from "./pages/PortalPage/PortalPage2";
 
 import Student1 from "./pages/Eventhandlerpage/Student1";
+import EmployeePage from "./pages/List_Rendering/EmployeePage";
+import ProductPage from "./pages/List_Rendering/ProductPage";
+import StudentRegistration2 from "./Eventhandler/StudentRegistration2";
+import StudentPage from "./pages/List_Rendering/StudentPage";
+import HomePage from "./pages/List_Rendering/Homepage";
+import NotFound from "./pages/routers/NotFound";
+import Contact from "./pages/routers/Contact";
+import StudentDetails from "./pages/routers/StudentDetails";
+import Students from "./pages/routers/Students";
+import Home from "./pages/routers/Home";
+import NavBar1 from "./pages/Router/NavBar1";
+
+
 
 
 function App() {
   return (
     <BrowserRouter>
+
+    <NavBar1/>
+
       <Routes>
 
-        {/* Home */}
-        <Route path="/" element={<FetchApi2 />} />
+
+        {/* Home
+        <Route path="/FetchApi2" element={<FetchApi2 />} /> */}
 
         {/* Components */}
         <Route path="/components" element={<ComponentsPage />} />
@@ -225,8 +242,38 @@ function App() {
           path="Student1"
           element={<Student1/>}
         />
-       
 
+                         <Route
+          path="EmployeePage"
+          element={<EmployeePage/>}
+        />
+                        <Route
+          path="Productpage"
+          element={<ProductPage/>}
+        />
+                        <Route
+          path="Studentpage"
+          element={<StudentPage/>}
+        />
+
+                      <Route
+          path="Homepage"
+          element={<HomePage/>}
+        />
+
+
+           <Route path="/" element={<Home />} />
+
+                <Route path="/students" element={<Students />} />
+
+                <Route
+                    path="/students/:id"
+                    element={<StudentDetails />}
+                       />
+
+                <Route path="/contact" element={<Contact />} />
+
+                <Route path="*" element={<NotFound />} />
 
 
       </Routes>
