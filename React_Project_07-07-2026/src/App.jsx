@@ -1,4 +1,5 @@
-import { BrowserRouter, Routes, Route} from "react-router-dom";
+import { BrowserRouter, Routes, Route ,NavLink} from "react-router-dom";
+
 
 import ComponentsPage from "./pages/components_06-07-2026/ComponentsPage";
 import PropsPage from "./pages/props_07-07-2026/PropsPage";
@@ -45,21 +46,47 @@ import ProductPage from "./pages/List_Rendering/ProductPage";
 import StudentRegistration2 from "./Eventhandler/StudentRegistration2";
 import StudentPage from "./pages/List_Rendering/StudentPage";
 import HomePage from "./pages/List_Rendering/Homepage";
-import NotFound from "./pages/routers/NotFound";
-import Contact from "./pages/routers/Contact";
-import StudentDetails from "./pages/routers/StudentDetails";
-import Students from "./pages/routers/Students";
-import Home from "./pages/routers/Home";
-import NavBar1 from "./pages/Router/NavBar1";
+// import NotFound from "./pages/routers/NotFound";
+// import Contact from "./pages/routers/Contact";
+// import StudentDetails from "./pages/routers/StudentDetails";
+// import Students from "./pages/routers/Students";
+// import Home from "./pages/routers/Home";
+// import NavBar1 from "./pages/Router/NavBar1";
+
+import Home from "./Routers_04-08-2026/Home";
+import About from "./Routers_04-08-2026/About";
+import Contact from "./Routers_04-08-2026/Contact";
+import Login from "./Routers_04-08-2026/Login";
+import Products from "./Routers_04-08-2026/Products";
+import ProductDetails from "./Routers_04-08-2026/ProductDetails";
+import Dashboard from "./Routers_04-08-2026/Dashboard";
+import Profile from "./Routers_04-08-2026/Profile";
+import Orders from "./Routers_04-08-2026/Orders";
+import Settings from "./Routers_04-08-2026/Settings";
+import NotFound from "./Routers_04-08-2026/NotFound";
+import ProtectedRoute from "./Routers_04-08-2026/ProtectedRoute";
 
 
 
 
 function App() {
+   const isLoggedIn = true;
   return (
     <BrowserRouter>
 
-    <NavBar1/>
+    <h1>Student Management System</h1>
+
+<nav>
+  <NavLink to="/">Home</NavLink> |{" "}
+  <NavLink to="/about">About</NavLink> |{" "}
+  <NavLink to="/contact">Contact</NavLink> |{" "}
+  <NavLink to="/products">Products</NavLink> |{" "}
+  <NavLink to="/dashboard">Dashboard</NavLink> |{" "}
+  <NavLink to="/login">Login</NavLink>
+</nav>
+
+<hr />
+
 
       <Routes>
 
@@ -261,8 +288,8 @@ function App() {
           element={<HomePage/>}
         />
 
-
-           <Route path="/" element={<Home />} />
+{/* 
+           <Route path="/Home" element={<Home />} />
 
                 <Route path="/students" element={<Students />} />
 
@@ -273,12 +300,43 @@ function App() {
 
                 <Route path="/contact" element={<Contact />} />
 
-                <Route path="*" element={<NotFound />} />
+                <Route path="*" element={<NotFound />} /> */}
+
+
+
+
+  <Route path="/" element={<Home />} />
+
+  <Route path="/about" element={<About />} />
+
+  <Route path="/contact" element={<Contact />} />
+
+  <Route path="/login" element={<Login />} />
+
+  <Route path="/products" element={<Products />} />
+
+  <Route path="/product/:id" element={<ProductDetails />} />
+
+  <Route
+    path="/dashboard"
+    element={
+      <ProtectedRoute isLoggedIn={isLoggedIn}>
+        <Dashboard />
+      </ProtectedRoute>
+    }
+  >
+    <Route path="profile" element={<Profile />} />
+    <Route path="orders" element={<Orders />} />
+    <Route path="settings" element={<Settings />} />
+  </Route>
+
+  <Route path="*" element={<NotFound />} />
 
 
       </Routes>
     </BrowserRouter>
   );
 }
+
 
 export default App;
