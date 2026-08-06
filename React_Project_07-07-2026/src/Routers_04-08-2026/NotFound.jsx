@@ -19,3 +19,7 @@ function NotFound() {
 }
 
 export default NotFound;
+npm install --save-dev webpack-dev-server
+npm install --save-dev html-webpack-plugin
+npm install --save-dev babel-loader @babel/core @babel/preset-env
+npm install --save-dev style-loader css-loader
