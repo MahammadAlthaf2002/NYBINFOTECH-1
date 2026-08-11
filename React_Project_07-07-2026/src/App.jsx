@@ -84,6 +84,7 @@ import ProtectedRoute from "./Routers_04-08-2026/ProtectedRoute";
 
 // Student Management Project
 import StudentApp from "./pages/project-10-08-2026/StudentApp";
+import UserManagement from "./pages/userManagement/UserManagement";
 
 
 function App() {
@@ -105,6 +106,11 @@ function App() {
                     path="/StudentApp"
                     element={<StudentApp />}
                 />
+
+                  <Route
+                        path="UserManagement"
+                        element={<UserManagement />}
+                    />
 
 
                 {/* ================================= */}
@@ -404,7 +410,7 @@ function App() {
                         path="settings"
                         element={<Settings />}
                     />
-
+                    
                 </Route>
 
 
