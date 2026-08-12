@@ -4,101 +4,225 @@ import {
     Route
 } from "react-router-dom";
 
+
 // Components
-import ComponentsPage from "./pages/components_06-07-2026/ComponentsPage";
+import ComponentsPage
+    from "./pages/components_06-07-2026/ComponentsPage";
+
 
 // Props
-import PropsPage from "./pages/props_07-07-2026/PropsPage";
+import PropsPage
+    from "./pages/props_07-07-2026/PropsPage";
+
 
 // State
-import StatemanagmentPage from "./pages/Statemangement_08-07-2026/StatemanagementPage";
+import StatemanagmentPage
+    from "./pages/Statemangement_08-07-2026/StatemanagementPage";
+
 
 // Fetch API
-import FetchApi1 from "./pages/FetchApi_10-07-2026/FetchApi1";
-import FetchApi2 from "./pages/Fetchapi/FetchApi2";
+import FetchApi1
+    from "./pages/FetchApi_10-07-2026/FetchApi1";
+
+import FetchApi2
+    from "./pages/Fetchapi/FetchApi2";
+
 
 // Context API
-import ContextApp from "./pages/ContextApp";
+import ContextApp
+    from "./pages/ContextApp";
+
 
 // Redux
-import Redux from "./pages/Redux_16-07-2026/Redux";
+import Redux
+    from "./pages/Redux_16-07-2026/Redux";
+
 
 // Conditional Rendering
-import IfConditional2 from "./pages/ConditionalRenderings/IfConditional2";
-import TernaryConditionalPage from "./pages/ConditionalRenderings/TernaryConditionalPage";
-import AndConditionalPage from "./pages/ConditionalRenderings/AndConditionalPage";
-import OrConditionalPage from "./pages/ConditionalRenderings/OrConditionalPage";
-import SwitchConditionalPage from "./pages/ConditionalRenderings/SwitchConditionalPage";
+import IfConditional2
+    from "./pages/ConditionalRenderings/IfConditional2";
+
+import TernaryConditionalPage
+    from "./pages/ConditionalRenderings/TernaryConditionalPage";
+
+import AndConditionalPage
+    from "./pages/ConditionalRenderings/AndConditionalPage";
+
+import OrConditionalPage
+    from "./pages/ConditionalRenderings/OrConditionalPage";
+
+import SwitchConditionalPage
+    from "./pages/ConditionalRenderings/SwitchConditionalPage";
+
 
 // Event Handling
-import OnClick from "./pages/EventHandling/OnClick";
-import OnDoubleClickEventPage from "./pages/EventHandling/OnDoubleClickEventPage";
+import OnClick
+    from "./pages/EventHandling/OnClick";
+
+import OnDoubleClickEventPage
+    from "./pages/EventHandling/OnDoubleClickEventPage";
+
 
 // Controlled Components
-import TextBox from "./pages/Controlled_component_page/TextBox";
-import RegistrationForm2Page from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm2Page";
-import RegistrationFormTask from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
+import TextBox
+    from "./pages/Controlled_component_page/TextBox";
+
+import RegistrationForm2Page
+    from "./pages/Comtrolled_component_page_22-07-2026/RegistrationForm2Page";
+
+import RegistrationFormTask
+    from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
+
 
 // useEffect
-import UseEffect from "./pages/UseEffect_page_21-07-2026/UseEffect";
+import UseEffect
+    from "./pages/UseEffect_page_21-07-2026/UseEffect";
+
 
 // Complete Revision
-import IfCondition from "./pages/CompleteRevision_24-07_2026/IfCondition";
-import TernaryOpertor1 from "./pages/CompleteRevision_24-07_2026/TernaryOpertor1";
-import Usee from "./pages/CompleteRevision_24-07_2026/Usee";
+import IfCondition
+    from "./pages/CompleteRevision_24-07_2026/IfCondition";
+
+import TernaryOpertor1
+    from "./pages/CompleteRevision_24-07_2026/TernaryOpertor1";
+
+import Usee
+    from "./pages/CompleteRevision_24-07_2026/Usee";
+
 
 // Hooks
-import Hook from "./pages/Hooks_page_28-07-2026/Hook";
-import UseFrom from "./pages/Hooks_page_28-07-2026/UseFrom";
-import WindowSize1 from "./pages/Hooks_page_28-07-2026/windowSize1";
+import Hook
+    from "./pages/Hooks_page_28-07-2026/Hook";
+
+import UseFrom
+    from "./pages/Hooks_page_28-07-2026/UseFrom";
+
+import WindowSize1
+    from "./pages/Hooks_page_28-07-2026/windowSize1";
+
 
 // HOC
-import WithAuth1 from "./pages/Hoc_28-07-2026/WithAuth1";
-import WithLoading1 from "./pages/Hoc_28-07-2026/WithLoading1";
+import WithAuth1
+    from "./pages/Hoc_28-07-2026/WithAuth1";
+
+import WithLoading1
+    from "./pages/Hoc_28-07-2026/WithLoading1";
+
 
 // Portals
-import PortalPage from "./pages/PortalPage/PortalPage";
-import PortalPage1 from "./pages/PortalPage/PortalPage1";
-import PortalPage2 from "./pages/PortalPage/PortalPage2";
+import PortalPage
+    from "./pages/PortalPage/PortalPage";
 
-// List Rendering / Other
-import Student1 from "./pages/Eventhandlerpage/Student1";
-import EmployeePage from "./pages/List_Rendering/EmployeePage";
-import ProductPage from "./pages/List_Rendering/ProductPage";
-import StudentPage from "./pages/List_Rendering/StudentPage";
-import HomePage from "./pages/List_Rendering/Homepage";
+import PortalPage1
+    from "./pages/PortalPage/PortalPage1";
+
+import PortalPage2
+    from "./pages/PortalPage/PortalPage2";
+
+
+// List Rendering
+import Student1
+    from "./pages/Eventhandlerpage/Student1";
+
+import EmployeePage
+    from "./pages/List_Rendering/EmployeePage";
+
+import ProductPage
+    from "./pages/List_Rendering/ProductPage";
+
+import StudentPage
+    from "./pages/List_Rendering/StudentPage";
+
+import HomePage
+    from "./pages/List_Rendering/Homepage";
+
 
 // Browser Router Pages
-import Home from "./Routers_04-08-2026/Home";
-import About from "./Routers_04-08-2026/About";
-import Contact from "./Routers_04-08-2026/Contact";
-import Login from "./Routers_04-08-2026/Login";
-import Products from "./Routers_04-08-2026/Products";
-import ProductDetails from "./Routers_04-08-2026/ProductDetails";
-import Dashboard from "./Routers_04-08-2026/Dashboard";
-import Profile from "./Routers_04-08-2026/Profile";
-import Orders from "./Routers_04-08-2026/Orders";
-import Settings from "./Routers_04-08-2026/Settings";
+import Home
+    from "./Routers_04-08-2026/Home";
 
-import ProtectedRoute from "./Routers_04-08-2026/ProtectedRoute";
+import About
+    from "./Routers_04-08-2026/About";
+
+import Contact
+    from "./Routers_04-08-2026/Contact";
+
+import Login
+    from "./Routers_04-08-2026/Login";
+
+import Products
+    from "./Routers_04-08-2026/Products";
+
+import ProductDetails
+    from "./Routers_04-08-2026/ProductDetails";
+
+import Dashboard
+    from "./Routers_04-08-2026/Dashboard";
+
+import Profile
+    from "./Routers_04-08-2026/Profile";
+
+import Orders
+    from "./Routers_04-08-2026/Orders";
+
+import Settings
+    from "./Routers_04-08-2026/Settings";
+
+
+import ProtectedRoute
+    from "./Routers_04-08-2026/ProtectedRoute";
+
 
 // Student Management Project
-import StudentApp from "./pages/project-10-08-2026/StudentApp";
-import UserManagement from "./pages/userManagement/UserManagement";
+import StudentApp
+    from "./pages/project-10-08-2026/StudentApp";
+
+import UserManagement
+    from "./pages/userManagement/UserManagement";
+
+
+// =================================
+// AUTHENTICATION
+// =================================
+
+import AuthLogin
+    from "./Redux12-08-2026/Pages/Login";
+
+import Register
+    from "./Redux12-08-2026/Pages/Register";
+
+import AuthDashboard
+    from "./Redux12-08-2026/Pages/Dashboard";
+
+import AuthProfile
+    from "./Redux12-08-2026/Pages/Profile";
+
+import AdminDashboard
+    from "./Redux12-08-2026/Pages/AdminDashboard";
+
+
+import AuthProtectedRoute
+    from "./Redux12-08-2026/components-Redux/ProtectedRoute";
+
+import AdminRoute
+    from "./Redux12-08-2026/components-Redux/AdminRoute";
 
 
 function App() {
 
-    const isLoggedIn = true;
+    var isLoggedIn = true;
+
 
     return (
+
         <BrowserRouter>
 
-            <h1>Student Management System</h1>
+            <h1>
+                Student Management System
+            </h1>
 
             <Routes>
-
-                {/* ================================= */}
+                                {/* ================================= */}
                 {/* STUDENT MANAGEMENT PROJECT */}
                 {/* ================================= */}
 
@@ -107,10 +231,10 @@ function App() {
                     element={<StudentApp />}
                 />
 
-                  <Route
-                        path="UserManagement"
-                        element={<UserManagement />}
-                    />
+                <Route
+                    path="/UserManagement"
+                    element={<UserManagement />}
+                />
 
 
                 {/* ================================= */}
@@ -196,7 +320,9 @@ function App() {
                     path="/SwitchConditional"
                     element={<SwitchConditionalPage />}
                 />
-                                {/* ================================= */}
+
+
+                {/* ================================= */}
                 {/* EVENT HANDLING */}
                 {/* ================================= */}
 
@@ -375,6 +501,7 @@ function App() {
                     element={<Products />}
                 />
 
+
                 {/* Dynamic Route */}
 
                 <Route
@@ -382,19 +509,21 @@ function App() {
                     element={<ProductDetails />}
                 />
                                 {/* ================================= */}
-                {/* PROTECTED DASHBOARD */}
+                {/* OLD PROTECTED DASHBOARD */}
                 {/* ================================= */}
 
                 <Route
                     path="/dashboard"
                     element={
-                        <ProtectedRoute isLoggedIn={isLoggedIn}>
+                        <ProtectedRoute
+                            isLoggedIn={isLoggedIn}
+                        >
                             <Dashboard />
                         </ProtectedRoute>
                     }
                 >
 
-                    {/* Nested Routes */}
+                    {/* Nested Dashboard Routes */}
 
                     <Route
                         path="profile"
@@ -410,15 +539,75 @@ function App() {
                         path="settings"
                         element={<Settings />}
                     />
-                    
+
                 </Route>
 
 
-              
+                {/* ================================= */}
+                {/* AUTHENTICATION PROJECT */}
+                {/* ================================= */}
+
+                <Route
+                    path="/auth-login"
+                    element={<AuthLogin />}
+                />
+
+
+                <Route
+                    path="/register"
+                    element={<Register />}
+                />
+
+
+                <Route
+                    path="/auth-dashboard"
+                    element={
+                        <AuthProtectedRoute>
+                            <AuthDashboard />
+                        </AuthProtectedRoute>
+                    }
+                />
+
+
+                <Route
+                    path="/auth-profile"
+                    element={
+                        <AuthProtectedRoute>
+                            <AuthProfile />
+                        </AuthProtectedRoute>
+                    }
+                />
+
+
+                <Route
+                    path="/admin-dashboard"
+                    element={
+                        <AdminRoute>
+                            <AdminDashboard />
+                        </AdminRoute>
+                    }
+                />
+
+
+                {/* ================================= */}
+                {/* 404 PAGE */}
+                {/* ================================= */}
+
+                <Route
+                    path="*"
+                    element={
+                        <h1>
+                            Page Not Found
+                        </h1>
+                    }
+                />
+
             </Routes>
 
         </BrowserRouter>
+
     );
 }
+
 
 export default App;
