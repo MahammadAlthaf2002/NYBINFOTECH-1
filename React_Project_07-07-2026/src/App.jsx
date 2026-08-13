@@ -5,22 +5,34 @@ import {
 } from "react-router-dom";
 
 
-// Components
+// =================================
+// COMPONENTS
+// =================================
+
 import ComponentsPage
     from "./pages/components_06-07-2026/ComponentsPage";
 
 
-// Props
+// =================================
+// PROPS
+// =================================
+
 import PropsPage
     from "./pages/props_07-07-2026/PropsPage";
 
 
-// State
+// =================================
+// STATE
+// =================================
+
 import StatemanagmentPage
     from "./pages/Statemangement_08-07-2026/StatemanagementPage";
 
 
-// Fetch API
+// =================================
+// FETCH API
+// =================================
+
 import FetchApi1
     from "./pages/FetchApi_10-07-2026/FetchApi1";
 
@@ -28,17 +40,26 @@ import FetchApi2
     from "./pages/Fetchapi/FetchApi2";
 
 
-// Context API
+// =================================
+// CONTEXT API
+// =================================
+
 import ContextApp
     from "./pages/ContextApp";
 
 
-// Redux
+// =================================
+// REDUX
+// =================================
+
 import Redux
     from "./pages/Redux_16-07-2026/Redux";
 
 
-// Conditional Rendering
+// =================================
+// CONDITIONAL RENDERING
+// =================================
+
 import IfConditional2
     from "./pages/ConditionalRenderings/IfConditional2";
 
@@ -55,7 +76,10 @@ import SwitchConditionalPage
     from "./pages/ConditionalRenderings/SwitchConditionalPage";
 
 
-// Event Handling
+// =================================
+// EVENT HANDLING
+// =================================
+
 import OnClick
     from "./pages/EventHandling/OnClick";
 
@@ -63,7 +87,10 @@ import OnDoubleClickEventPage
     from "./pages/EventHandling/OnDoubleClickEventPage";
 
 
-// Controlled Components
+// =================================
+// CONTROLLED COMPONENTS
+// =================================
+
 import TextBox
     from "./pages/Controlled_component_page/TextBox";
 
@@ -74,12 +101,18 @@ import RegistrationFormTask
     from "./MiniAssessment/Controlled_Compontent_22-07-2026/RegistrationFormtask";
 
 
-// useEffect
+// =================================
+// USE EFFECT
+// =================================
+
 import UseEffect
     from "./pages/UseEffect_page_21-07-2026/UseEffect";
 
 
-// Complete Revision
+// =================================
+// COMPLETE REVISION
+// =================================
+
 import IfCondition
     from "./pages/CompleteRevision_24-07_2026/IfCondition";
 
@@ -90,7 +123,10 @@ import Usee
     from "./pages/CompleteRevision_24-07_2026/Usee";
 
 
-// Hooks
+// =================================
+// HOOKS
+// =================================
+
 import Hook
     from "./pages/Hooks_page_28-07-2026/Hook";
 
@@ -101,7 +137,10 @@ import WindowSize1
     from "./pages/Hooks_page_28-07-2026/windowSize1";
 
 
+// =================================
 // HOC
+// =================================
+
 import WithAuth1
     from "./pages/Hoc_28-07-2026/WithAuth1";
 
@@ -109,7 +148,10 @@ import WithLoading1
     from "./pages/Hoc_28-07-2026/WithLoading1";
 
 
-// Portals
+// =================================
+// PORTALS
+// =================================
+
 import PortalPage
     from "./pages/PortalPage/PortalPage";
 
@@ -120,7 +162,10 @@ import PortalPage2
     from "./pages/PortalPage/PortalPage2";
 
 
-// List Rendering
+// =================================
+// LIST RENDERING
+// =================================
+
 import Student1
     from "./pages/Eventhandlerpage/Student1";
 
@@ -137,7 +182,10 @@ import HomePage
     from "./pages/List_Rendering/Homepage";
 
 
-// Browser Router Pages
+// =================================
+// MAIN ROUTER
+// =================================
+
 import Home
     from "./Routers_04-08-2026/Home";
 
@@ -168,12 +216,14 @@ import Orders
 import Settings
     from "./Routers_04-08-2026/Settings";
 
-
 import ProtectedRoute
     from "./Routers_04-08-2026/ProtectedRoute";
 
 
-// Student Management Project
+// =================================
+// STUDENT MANAGEMENT PROJECT
+// =================================
+
 import StudentApp
     from "./pages/project-10-08-2026/StudentApp";
 
@@ -182,7 +232,7 @@ import UserManagement
 
 
 // =================================
-// AUTHENTICATION
+// AUTHENTICATION PROJECT
 // =================================
 
 import AuthLogin
@@ -200,7 +250,6 @@ import AuthProfile
 import AdminDashboard
     from "./Redux12-08-2026/Pages/AdminDashboard";
 
-
 import AuthProtectedRoute
     from "./Redux12-08-2026/components-Redux/ProtectedRoute";
 
@@ -208,17 +257,46 @@ import AdminRoute
     from "./Redux12-08-2026/components-Redux/AdminRoute";
 
 
+// =================================
+// FOOD DELIVERY APP
+// =================================
+
+import FoodNavbar
+    from "./Food_Delivery_App/components/Navbar";
+
+import FoodHome
+    from "./Food_Delivery_App/pages/Home";
+
+import Restaurant
+    from "./Food_Delivery_App/pages/Restaurant";
+
+import FoodCart
+    from "./Food_Delivery_App/pages/Cart";
+
+import FoodOrders
+    from "./Food_Delivery_App/pages/Orders";
+
+import FoodProfile
+    from "./Food_Delivery_App/pages/Profile";
+
+import FoodNotFound
+    from "./Food_Delivery_App/pages/NotFound";
+
+
+// =================================
+// APP
+// =================================
+
 function App() {
 
     var isLoggedIn = true;
-
 
     return (
 
         <BrowserRouter>
 
             <h1>
-                Student Management System
+                React JS Practice Project
             </h1>
 
             <Routes>
@@ -470,9 +548,7 @@ function App() {
                     path="/Homepage"
                     element={<HomePage />}
                 />
-
-
-                {/* ================================= */}
+                                {/* ================================= */}
                 {/* MAIN ROUTER */}
                 {/* ================================= */}
 
@@ -502,14 +578,18 @@ function App() {
                 />
 
 
-                {/* Dynamic Route */}
+                {/* ================================= */}
+                {/* DYNAMIC PRODUCT ROUTE */}
+                {/* ================================= */}
 
                 <Route
                     path="/product/:id"
                     element={<ProductDetails />}
                 />
-                                {/* ================================= */}
-                {/* OLD PROTECTED DASHBOARD */}
+
+
+                {/* ================================= */}
+                {/* PROTECTED DASHBOARD */}
                 {/* ================================= */}
 
                 <Route
@@ -523,7 +603,9 @@ function App() {
                     }
                 >
 
-                    {/* Nested Dashboard Routes */}
+                    {/* ================================= */}
+                    {/* NESTED DASHBOARD ROUTES */}
+                    {/* ================================= */}
 
                     <Route
                         path="profile"
@@ -552,12 +634,15 @@ function App() {
                     element={<AuthLogin />}
                 />
 
-
                 <Route
                     path="/register"
                     element={<Register />}
                 />
 
+
+                {/* ================================= */}
+                {/* PROTECTED AUTH DASHBOARD */}
+                {/* ================================= */}
 
                 <Route
                     path="/auth-dashboard"
@@ -569,6 +654,10 @@ function App() {
                 />
 
 
+                {/* ================================= */}
+                {/* PROTECTED AUTH PROFILE */}
+                {/* ================================= */}
+
                 <Route
                     path="/auth-profile"
                     element={
@@ -578,6 +667,10 @@ function App() {
                     }
                 />
 
+
+                {/* ================================= */}
+                {/* ADMIN ROUTE */}
+                {/* ================================= */}
 
                 <Route
                     path="/admin-dashboard"
@@ -590,7 +683,91 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* 404 PAGE */}
+                {/* FOOD DELIVERY APP */}
+                {/* ================================= */}
+
+                <Route
+                    path="/food"
+                    element={
+                        <>
+                            <FoodNavbar />
+                            <FoodHome />
+                        </>
+                    }
+                />
+
+
+                {/* ================================= */}
+                {/* FOOD RESTAURANT DETAILS */}
+                {/* ================================= */}
+
+                <Route
+                    path="/food/restaurant/:id"
+                    element={
+                        <>
+                            <FoodNavbar />
+                            <Restaurant />
+                        </>
+                    }
+                />
+
+
+                {/* ================================= */}
+                {/* FOOD CART */}
+                {/* ================================= */}
+
+                <Route
+                    path="/food/cart"
+                    element={
+                        <>
+                            <FoodNavbar />
+                            <FoodCart />
+                        </>
+                    }
+                />
+
+                                {/* ================================= */}
+                {/* FOOD ORDERS */}
+                {/* ================================= */}
+
+                <Route
+                    path="/food/orders"
+                    element={
+                        <>
+                            <FoodNavbar />
+                            <FoodOrders />
+                        </>
+                    }
+                />
+
+
+                {/* ================================= */}
+                {/* FOOD PROFILE */}
+                {/* ================================= */}
+
+                <Route
+                    path="/food/profile"
+                    element={
+                        <>
+                            <FoodNavbar />
+                            <FoodProfile />
+                        </>
+                    }
+                />
+
+
+                {/* ================================= */}
+                {/* FOOD DELIVERY 404 */}
+                {/* ================================= */}
+
+                <Route
+                    path="/food/*"
+                    element={<FoodNotFound />}
+                />
+
+
+                {/* ================================= */}
+                {/* MAIN 404 PAGE */}
                 {/* ================================= */}
 
                 <Route
@@ -608,6 +785,5 @@ function App() {
 
     );
 }
-
 
 export default App;
