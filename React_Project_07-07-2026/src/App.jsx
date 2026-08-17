@@ -85,23 +85,24 @@ import UserManagement
 // =================================
 // E-COMMERCE
 // =================================
-import ShopNavbar from "./Ecommerce/components/Navbar";
+import Navbar from "./E-Commerce Website/Components/Navbar";
 
-import ShopHome from "./Ecommerce/pages/Home";
+import ShopHome from"./E-Commerce Website/pages/Home";
 
-import ShopProducts from "./Ecommerce/pages/Products";
+import ShopProducts from "./E-Commerce Website/pages/Products";
 
-import ShopProductDetails from "./Ecommerce/pages/ProductDetails";
+import ShopProductDetails from "./E-Commerce Website/pages/ProductDetails";
 
-import ShopCart from "./Ecommerce/pages/Cart";
+import ShopCart from "./E-Commerce Website/pages/Cart";
 
-import ShopDashboard from "./Ecommerce/pages/Dashboard";
+import ShopDashboard from "./E-Commerce Website/pages/Dashboard";
 
-import ShopProfile from "./Ecommerce/pages/Profile";
+import ShopProfile from "./E-Commerce Website/pages/Profile";
 
-import ShopLogin from "./Ecommerce/pages/Login";
+import ShopLogin from "./E-Commerce Website/pages/Login";
 
-import ShopNotFound from "./Ecommerce/pages/NotFound";
+import ShopNotFound from "./E-Commerce Website/pages/NotFound";
+import Form from "./Registration_Form/From";
 
     // =================================
 // APP
@@ -299,7 +300,7 @@ function App() {
                     path="/shop"
                     element={
                         <>
-                            <ShopNavbar />
+                            <Navbar />
                             <ShopHome />
                         </>
                     }
@@ -314,7 +315,7 @@ function App() {
                     path="/shop/products"
                     element={
                         <>
-                            <ShopNavbar />
+                            <Navbar />
 
                             <ShopProducts
                                 addToCart={addToCart}
@@ -332,7 +333,7 @@ function App() {
                     path="/shop/products/:id"
                     element={
                         <>
-                            <ShopNavbar />
+                            <Navbar />
 
                             <ShopProductDetails />
                         </>
@@ -348,7 +349,7 @@ function App() {
                     path="/shop/cart"
                     element={
                         <>
-                            <ShopNavbar />
+                            <Navbar />
 
                             <ShopCart
                                 cart={cart}
@@ -439,7 +440,13 @@ function App() {
                         </h1>
                     }
                 />
-
+                  <Route
+                    path="From"
+                    element={
+                        <Form />
+                    }
+                />
+                 
             </Routes>
 
         </BrowserRouter>
