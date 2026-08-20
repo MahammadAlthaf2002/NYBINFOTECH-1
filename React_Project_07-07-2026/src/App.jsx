@@ -83,27 +83,68 @@ import UserManagement
 
 
 // =================================
-// E-COMMERCE
+// EXISTING E-COMMERCE
 // =================================
-import Navbar from "./E-Commerce Website/Components/Navbar";
 
-import ShopHome from"./E-Commerce Website/pages/Home";
+import Navbar
+    from "./E-Commerce Website/Components/Navbar";
 
-import ShopProducts from "./E-Commerce Website/pages/Products";
+import ShopHome
+    from "./E-Commerce Website/pages/Home";
 
-import ShopProductDetails from "./E-Commerce Website/pages/ProductDetails";
+import ShopProducts
+    from "./E-Commerce Website/pages/Products";
 
-import ShopCart from "./E-Commerce Website/pages/Cart";
+import ShopProductDetails
+    from "./E-Commerce Website/pages/ProductDetails";
 
-import ShopDashboard from "./E-Commerce Website/pages/Dashboard";
+import ShopCart
+    from "./E-Commerce Website/pages/Cart";
 
-import ShopProfile from "./E-Commerce Website/pages/Profile";
+import ShopDashboard
+    from "./E-Commerce Website/pages/Dashboard";
 
-import ShopLogin from "./E-Commerce Website/pages/Login";
+import ShopProfile
+    from "./E-Commerce Website/pages/Profile";
 
-import ShopNotFound from "./E-Commerce Website/pages/NotFound";
-import Form from "./Registration_Form/From";
+import ShopLogin
+    from "./E-Commerce Website/pages/Login";
 
+import ShopNotFound
+    from "./E-Commerce Website/pages/NotFound";
+
+import Form
+    from "./Registration_Form/From";
+
+
+// =================================
+// NEW REDUX TOOLKIT PROJECT
+// =================================
+
+// New project Navbar
+import ReduxCartNavbar
+    from "./ReduxCart/Component/Navbar";
+
+// New project pages
+import ReduxCartHome
+    from "./ReduxCart/Pages/Home";
+
+import ReduxCartProducts
+    from "./ReduxCart/Pages/Products";
+
+import ReduxCartProductDetails
+    from "./ReduxCart/Pages/ProductDetails";
+
+import ReduxCartPage
+    from "./ReduxCart/Pages/Cart";
+
+import ReduxCartProfile
+    from "./ReduxCart/Pages/Profile";
+
+
+// New project Theme Context
+import { useTheme }
+    from "./ReduxCart/context/ThemeContext";
     // =================================
 // APP
 // =================================
@@ -114,14 +155,14 @@ function App() {
 
 
     // =================================
-    // E-COMMERCE CART STATE
+    // EXISTING E-COMMERCE CART STATE
     // =================================
 
     var [cart, setCart] = useState([]);
 
 
     // =================================
-    // ADD TO CART
+    // EXISTING ADD TO CART
     // =================================
 
     function addToCart(product) {
@@ -143,6 +184,15 @@ function App() {
 
 
     // =================================
+    // NEW REDUX PROJECT THEME
+    // =================================
+
+    const {
+        darkMode
+    } = useTheme();
+
+
+    // =================================
     // APP RETURN
     // =================================
 
@@ -150,12 +200,20 @@ function App() {
 
         <BrowserRouter>
 
-            <h1>
-                React JS Practice Project
-            </h1>
+            <div
+                className={
+                    darkMode
+                        ? "app dark"
+                        : "app"
+                }
+            >
 
-            <Routes>
-                                {/* ================================= */}
+                <h1>
+                    React JS Practice Project
+                </h1>
+
+                <Routes>
+                                    {/* ================================= */}
                 {/* STUDENT MANAGEMENT */}
                 {/* ================================= */}
 
@@ -226,6 +284,66 @@ function App() {
 
 
                 {/* ================================= */}
+                {/* NEW REDUX TOOLKIT PROJECT */}
+                {/* ================================= */}
+
+                <Route
+                    path="/redux-cart"
+                    element={
+                        <>
+                            <ReduxCartNavbar />
+
+                            <ReduxCartHome />
+                        </>
+                    }
+                />
+
+                <Route
+                    path="/redux-cart/products"
+                    element={
+                        <>
+                            <ReduxCartNavbar />
+
+                            <ReduxCartProducts />
+                        </>
+                    }
+                />
+
+                <Route
+                    path="/redux-cart/products/:id"
+                    element={
+                        <>
+                            <ReduxCartNavbar />
+
+                            <ReduxCartProductDetails />
+                        </>
+                    }
+                />
+
+                <Route
+                    path="/redux-cart/cart"
+                    element={
+                        <>
+                            <ReduxCartNavbar />
+
+                            <ReduxCartPage />
+                        </>
+                    }
+                />
+
+                <Route
+                    path="/redux-cart/profile"
+                    element={
+                        <>
+                            <ReduxCartNavbar />
+
+                            <ReduxCartProfile />
+                        </>
+                    }
+                />
+
+
+                {/* ================================= */}
                 {/* MAIN ROUTER */}
                 {/* ================================= */}
 
@@ -258,9 +376,7 @@ function App() {
                     path="/product/:id"
                     element={<ProductDetails />}
                 />
-
-
-                {/* ================================= */}
+                                {/* ================================= */}
                 {/* PROTECTED DASHBOARD */}
                 {/* ================================= */}
 
@@ -292,8 +408,9 @@ function App() {
 
                 </Route>
 
-                                {/* ================================= */}
-                {/* SHOP EASY HOME */}
+
+                {/* ================================= */}
+                {/* EXISTING SHOP HOME */}
                 {/* ================================= */}
 
                 <Route
@@ -301,6 +418,7 @@ function App() {
                     element={
                         <>
                             <Navbar />
+
                             <ShopHome />
                         </>
                     }
@@ -308,7 +426,7 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* SHOP PRODUCTS */}
+                {/* EXISTING SHOP PRODUCTS */}
                 {/* ================================= */}
 
                 <Route
@@ -326,7 +444,7 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* SHOP PRODUCT DETAILS */}
+                {/* EXISTING SHOP PRODUCT DETAILS */}
                 {/* ================================= */}
 
                 <Route
@@ -342,7 +460,7 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* SHOP CART */}
+                {/* EXISTING SHOP CART */}
                 {/* ================================= */}
 
                 <Route
@@ -360,7 +478,7 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* SHOP LOGIN */}
+                {/* EXISTING SHOP LOGIN */}
                 {/* ================================= */}
 
                 <Route
@@ -372,7 +490,7 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* SHOP DASHBOARD */}
+                {/* EXISTING SHOP DASHBOARD */}
                 {/* ================================= */}
 
                 <Route
@@ -381,7 +499,8 @@ function App() {
                         localStorage.getItem("token") ? (
 
                             <>
-                                <ShopNavbar />
+                                <Navbar />
+
                                 <ShopDashboard />
                             </>
 
@@ -395,7 +514,7 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* SHOP PROFILE */}
+                {/* EXISTING SHOP PROFILE */}
                 {/* ================================= */}
 
                 <Route
@@ -404,7 +523,8 @@ function App() {
                         localStorage.getItem("token") ? (
 
                             <>
-                                <ShopNavbar />
+                                <Navbar />
+
                                 <ShopProfile />
                             </>
 
@@ -418,7 +538,7 @@ function App() {
 
 
                 {/* ================================= */}
-                {/* SHOP 404 */}
+                {/* EXISTING SHOP 404 */}
                 {/* ================================= */}
 
                 <Route
@@ -440,17 +560,24 @@ function App() {
                         </h1>
                     }
                 />
-                  <Route
+
+
+                {/* ================================= */}
+                {/* REGISTRATION FORM */}
+                {/* ================================= */}
+
+                <Route
                     path="From"
                     element={
                         <Form />
                     }
                 />
-                 
+
             </Routes>
 
-        </BrowserRouter>
+            </div>
 
+        </BrowserRouter>
     );
 }
 

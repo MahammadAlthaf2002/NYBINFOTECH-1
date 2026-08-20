@@ -1,0 +1,1 @@
+export default function OptimizationPanel({renderCount,filterRuns}){return <aside className="panel"><h2>Optimization Monitor</h2><div className="metric"><span>Parent renders</span><b>{renderCount}</b></div><div className="metric"><span>Filter/calculation runs</span><b>{filterRuns}</b></div><p>Open DevTools Console to see memoized component render logs.</p></aside>}

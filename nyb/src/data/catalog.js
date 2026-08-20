@@ -1,0 +1,53 @@
+export const images = {
+  phone: 'https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=85',
+  fashion: 'https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=900&q=85',
+  sneakers: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=85',
+  headphones: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?auto=format&fit=crop&w=900&q=85',
+  restaurant: 'https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85',
+  burger: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85',
+  pizza: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?auto=format&fit=crop&w=900&q=85',
+  medicine: 'https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=900&q=85',
+  travel: 'https://images.unsplash.com/photo-1436491865332-7a61a109cc05?auto=format&fit=crop&w=900&q=85',
+  hotel: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=900&q=85',
+  grocery: 'https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=85',
+  gold: 'https://images.unsplash.com/photo-1610375461246-83df859d849d?auto=format&fit=crop&w=900&q=85',
+  card: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=85',
+};
+export const products = [
+  {id:'iphone', name:'Apple iPhone 15', category:'shopping', price:54999, oldPrice:69999, rating:4.8, image:images.phone, tag:'Best Seller'},
+  {id:'sneaker', name:'Nike Air Max 270', category:'shopping', price:6499, oldPrice:8999, rating:4.6, image:images.sneakers, tag:'Trending'},
+  {id:'headphones', name:'Sony WH-1000XM5', category:'shopping', price:24990, oldPrice:29990, rating:4.7, image:images.headphones, tag:'Top Rated'},
+  {id:'jacket', name:'Premium Overshirt Jacket', category:'shopping', price:1799, oldPrice:2499, rating:4.5, image:images.fashion, tag:'New'},
+  {id:'burger', name:'Classic Smash Burger', category:'food', price:249, oldPrice:329, rating:4.7, image:images.burger, tag:'30 min'},
+  {id:'pizza', name:'Farmhouse Pizza', category:'food', price:449, oldPrice:599, rating:4.6, image:images.pizza, tag:'25 min'},
+  {id:'medicine', name:'Everyday Health Essentials', category:'medicine', price:399, oldPrice:499, rating:4.8, image:images.medicine, tag:'20 min'},
+  {id:'hotel', name:'Premium City Hotel', category:'travel', price:3999, oldPrice:4999, rating:4.6, image:images.hotel, tag:'Breakfast included'},
+];
+export const categories = [
+  ['shopping','Shopping','Real products & deals'],['food','Food Delivery','Restaurants near you'],['movie','Movies & Tickets','Book seats online'],['medicine','Medicine','Pharmacy & health'],['flight','Flights & Hotels','Travel worldwide'],['hotel','Hotels','Stay easy'],['recharge','Recharge','Bills & mobile'],['more','More Services','Explore all']
+];
+export const services = {
+  bills:{title:'Bill Payments', eyebrow:'PAYMENTS', subtitle:'Pay electricity, water, gas and recurring household bills.', image:images.card, features:['Electricity','Water','Gas','Broadband']},
+  money:{title:'Send Money', eyebrow:'PAYMENTS', subtitle:'Start a secure transfer flow with a recipient and amount.', image:images.card, features:['UPI Transfer','Bank Transfer','Contacts','Transaction history']},
+  shopping:{title:'Shopping', eyebrow:'MARKETPLACE', subtitle:'Discover real products from trusted brands.', image:images.fashion, features:['Electronics','Fashion','Footwear','Home & Living']},
+  food:{title:'Food Delivery', eyebrow:'FOOD & DINING', subtitle:'Order from restaurants and track your delivery.', image:images.restaurant, features:['Burgers','Pizza','Indian','Healthy Food']},
+  movie:{title:'Movies & Tickets', eyebrow:'ENTERTAINMENT', subtitle:'Find shows, select seats and continue to booking.', image:'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=1200&q=85', features:['Movies','Theatres','Live Events','Offers']},
+  medicine:{title:'Medicine & Health', eyebrow:'HEALTHCARE', subtitle:'Order everyday health essentials and explore care services.', image:images.medicine, features:['Medicines','Doctor Consult','Lab Tests','Health Packages']},
+  flight:{title:'Flights & Hotels', eyebrow:'TRAVEL', subtitle:'Plan your trip with flights, hotels and travel essentials.', image:images.travel, features:['Flights','Hotels','Packages','Airport Services']},
+  hotel:{title:'Hotels', eyebrow:'STAYS', subtitle:'Compare stays and choose the right room for your trip.', image:images.hotel, features:['Hotels','Resorts','Business Stays','Family Stays']},
+  recharge:{title:'Recharge & Bills', eyebrow:'PAYMENTS', subtitle:'Recharge mobile, pay bills and manage recurring payments.', image:images.card, features:['Mobile Recharge','Electricity','Water','Broadband']},
+  banking:{title:'Banking & Finance', eyebrow:'MONEY', subtitle:'Explore secure payment, banking and finance services.', image:images.card, features:['Send Money','UPI','Cards','Finance']},
+  insurance:{title:'Insurance', eyebrow:'PROTECTION', subtitle:'Compare protection plans and manage your policies.', image:images.gold, features:['Health','Life','Vehicle','Travel']},
+  education:{title:'Education', eyebrow:'LEARNING', subtitle:'Find courses, learning tools and education services.', image:'https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=1200&q=85', features:['Courses','Certifications','Exams','Learning Tools']},
+  gifts:{title:'Gift Cards', eyebrow:'GIFTS', subtitle:'Send digital gifts for shopping, food and entertainment.', image:'https://images.unsplash.com/photo-1513883049090-d0b7439799bf?auto=format&fit=crop&w=1200&q=85', features:['Shopping Cards','Food Cards','Movie Cards','Experiences']},
+  events:{title:'Events & Fun', eyebrow:'EXPERIENCES', subtitle:'Discover experiences, events and things to do.', image:'https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=1200&q=85', features:['Concerts','Experiences','Sports','Family Fun']},
+  government:{title:'Government Services', eyebrow:'PUBLIC SERVICES', subtitle:'Find useful public-service information in one place.', image:'https://images.unsplash.com/photo-1529107386315-e1a2ed48a620?auto=format&fit=crop&w=1200&q=85', features:['Documents','Payments','Applications','Information']},
+  gold:{title:'Gold Investment', eyebrow:'INVESTMENTS', subtitle:'Explore digital gold and investment information.', image:images.gold, features:['Digital Gold','Savings','Prices','Guides']},
+  doctor:{title:'Doctor Consult', eyebrow:'HEALTHCARE', subtitle:'Choose a specialty and request an appointment.', image:'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=1200&q=85', features:['General Physician','Dentist','Dermatology','Pediatrics']},
+  labs:{title:'Lab Tests', eyebrow:'DIAGNOSTICS', subtitle:'Browse common diagnostic tests and packages.', image:'https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1200&q=85', features:['Blood Tests','Health Packages','Diabetes','Thyroid']},
+  covid:{title:'COVID Care', eyebrow:'HEALTHCARE', subtitle:'Explore health and wellness essentials.', image:images.medicine, features:['Essentials','Masks','Care Kits','Information']},
+  nearby:{title:'Find Nearby', eyebrow:'LOCAL SERVICES', subtitle:'Find useful services around your selected location.', image:'https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1200&q=85', features:['ATMs','Hospitals','Restaurants','Pharmacies']},
+  donate:{title:'Donate', eyebrow:'GIVE BACK', subtitle:'Choose a cause and continue to a donation form.', image:'https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1200&q=85', features:['Education','Health','Food','Emergency']},
+  more:{title:'All Services', eyebrow:'NYB DIRECTORY', subtitle:'Explore every service available in the app.', image:images.phone, features:['Shopping','Food','Travel','Payments','Health','Finance']},
+  premium:{title:'NYB Premium', eyebrow:'MEMBERSHIP', subtitle:'Unlock extra savings, priority support and member benefits.', image:'https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1200&q=85', features:['Free Delivery','Extra Discounts','Priority Support','Early Access']},
+};

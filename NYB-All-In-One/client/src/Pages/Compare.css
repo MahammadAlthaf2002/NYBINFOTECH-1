@@ -1,0 +1,358 @@
+.comparePage {
+  min-height: 100vh;
+  background: #070a12;
+  color: white;
+  padding-bottom: 80px;
+}
+
+.compareTopBar {
+  padding: 25px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+}
+
+.compareLogo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.compareLogoMark {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg,#00e9bd,#5d65ff);
+  font-weight: 900;
+}
+
+.compareLogo strong {
+  display: block;
+  font-size: 18px;
+}
+
+.compareLogo span {
+  display: block;
+  font-size: 8px;
+  letter-spacing: 2px;
+  color: #7d8496;
+}
+
+.compareTitle {
+  text-align: center;
+}
+
+.compareTitle span {
+  color: #00e9bd;
+  font-size: 9px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.compareTitle h1 {
+  margin: 6px 0 0;
+  font-size: 25px;
+}
+
+.backButton {
+  background: #111827;
+  color: white;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 10px 18px;
+  border-radius: 9px;
+}
+
+.compareSearch {
+  padding: 35px 7% 10px;
+}
+
+.compareSearchBox {
+  display: flex;
+  align-items: center;
+  background: #111724;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 7px 7px 7px 18px;
+}
+
+.compareSearchBox span {
+  color: #687286;
+  font-size: 22px;
+}
+
+.compareSearchBox input {
+  flex: 1;
+  padding: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 14px;
+}
+
+.compareSearchBox button {
+  padding: 13px 25px;
+  border-radius: 10px;
+  background: linear-gradient(135deg,#00e9bd,#5d65ff);
+  color: white;
+  font-weight: 800;
+}
+
+.resultHeader {
+  margin: 35px 7% 25px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+
+.resultLabel,
+.sectionHeading span,
+.historyText span {
+  color: #00e9bd;
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: 2px;
+}
+
+.resultHeader h2 {
+  font-size: 36px;
+  margin: 8px 0;
+}
+
+.resultHeader p {
+  color: #737d91;
+}
+
+.liveStatus {
+  color: #00e9bd;
+  font-size: 11px;
+}
+
+.liveStatus span {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  background: #00e9bd;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+.summaryGrid {
+  margin: 0 7% 50px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 15px;
+}
+
+.summaryCard {
+  padding: 25px;
+  border-radius: 18px;
+  background: #0f1420;
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.summaryCard span {
+  font-size: 10px;
+  color: #788194;
+}
+
+.summaryCard strong {
+  display: block;
+  font-size: 29px;
+  margin: 12px 0;
+}
+
+.summaryCard small {
+  color: #6f788b;
+}
+
+.summaryCard.lowest {
+  border-color: rgba(0,233,189,0.3);
+}
+
+.summaryCard.lowest strong,
+.summaryCard.saving strong {
+  color: #00e9bd;
+}
+
+.providersSection {
+  margin: 0 7% 50px;
+}
+
+.sectionHeading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 18px;
+}
+
+.sectionHeading h2 {
+  margin: 7px 0;
+}
+
+.sectionHeading small {
+  color: #697285;
+}
+
+.providerList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.providerCard {
+  min-height: 70px;
+  padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  border-radius: 14px;
+  background: #0e131e;
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+.providerCard.bestProvider {
+  border-color: rgba(0,233,189,0.35);
+  background: rgba(0,233,189,0.035);
+}
+
+.rank {
+  width: 30px;
+  color: #5f687b;
+  font-size: 11px;
+}
+
+.providerLogo {
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  background: #182033;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.providerInfo {
+  flex: 1;
+}
+
+.providerInfo h3 {
+  margin: 0 0 5px;
+}
+
+.providerInfo p {
+  margin: 0;
+  color: #e7bd4c;
+  font-size: 11px;
+}
+
+.providerPrice {
+  min-width: 130px;
+}
+
+.providerPrice small {
+  display: block;
+  color: #5e6779;
+  font-size: 8px;
+}
+
+.providerPrice strong {
+  font-size: 20px;
+}
+
+.lowestBadge {
+  color: #00e9bd;
+  font-size: 9px;
+  font-weight: 900;
+}
+
+.viewDeal {
+  padding: 10px 15px;
+  border-radius: 9px;
+  background: #182033;
+  color: white;
+}
+
+.priceHistory {
+  margin: 0 7%;
+  padding: 30px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  background: linear-gradient(
+    100deg,
+    rgba(0,233,189,0.06),
+    rgba(92,100,255,0.08)
+  );
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.historyText h2 {
+  margin: 10px 0;
+}
+
+.historyText p {
+  max-width: 520px;
+  color: #737d91;
+  line-height: 1.6;
+}
+
+.historyNumbers {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.historyNumbers small {
+  display: block;
+  color: #687185;
+  font-size: 8px;
+}
+
+.historyNumbers strong {
+  display: block;
+  margin-top: 7px;
+  font-size: 19px;
+}
+
+.demoNotice {
+  margin: 25px 7%;
+  padding: 13px 18px;
+  border-radius: 10px;
+  background: rgba(255,190,50,0.06);
+  border: 1px solid rgba(255,190,50,0.15);
+  color: #a99b73;
+  font-size: 10px;
+}
+
+@media(max-width:800px) {
+
+  .compareTopBar,
+  .resultHeader,
+  .priceHistory {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .compareTitle {
+    text-align: left;
+  }
+
+  .summaryGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .providerCard {
+    flex-wrap: wrap;
+  }
+
+  .historyNumbers {
+    flex-wrap: wrap;
+  }
+}
