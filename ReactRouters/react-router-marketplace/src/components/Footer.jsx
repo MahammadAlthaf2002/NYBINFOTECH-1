@@ -1,0 +1,1 @@
+export default function Footer(){return <footer>RouteHub • React Router Practice Project • Built with React + React Router</footer>}

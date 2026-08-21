@@ -1,0 +1,1 @@
+export default function DashboardHome(){return <div><h1>Dashboard Overview</h1><p>This is the index child route for <code>/dashboard</code>.</p><div className="stats"><article><strong>3</strong><span>Nested Pages</span></article><article><strong>1</strong><span>Protected Parent</span></article><article><strong>✓</strong><span>Authenticated</span></article></div></div>}

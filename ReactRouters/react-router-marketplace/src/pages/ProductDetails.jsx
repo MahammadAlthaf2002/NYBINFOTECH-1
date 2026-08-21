@@ -1,0 +1,4 @@
+import { Link, useNavigate, useParams } from "react-router-dom"; import { products } from "../data/products";
+export default function ProductDetails(){const {id}=useParams(); const navigate=useNavigate(); const product=products.find(p=>p.id===id);
+if(!product)return <section className="empty"><h1>Product Not Found</h1><p>The dynamic ID <code>{id}</code> does not match any product.</p><Link className="btn" to="/products">Back to Products</Link></section>;
+return <section className="details"><div className="details-icon">{product.icon}</div><div><p className="eyebrow">DYNAMIC ROUTE: /products/:id</p><p className="tag">{product.category}</p><h1>{product.name}</h1><p className="details-text">{product.description}</p><h2>{product.price}</h2><p>⭐ {product.rating} rating</p><div className="hero-actions"><Link className="btn secondary" to="/products">← Products</Link><button className="btn" onClick={()=>navigate(-1)}>Go Back</button></div></div></section>}

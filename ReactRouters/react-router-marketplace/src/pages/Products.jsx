@@ -1,0 +1,2 @@
+import { products } from "../data/products"; import ProductCard from "../components/ProductCard";
+export default function Products(){return <section><div className="page-title"><p className="eyebrow">STATIC ROUTE: /products</p><h1>Explore Products</h1><p>Click any product to create a dynamic URL such as <code>/products/1</code>.</p></div><div className="grid">{products.map(p=><ProductCard key={p.id} product={p}/>)}</div></section>}

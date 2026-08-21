@@ -1,0 +1,1 @@
+export default function Profile(){return <div><p className="eyebrow">NESTED ROUTE</p><h1>Your Profile</h1><p>This component appears inside the parent's <code>Outlet</code>.</p><div className="profile-box"><div className="avatar">RH</div><div><h3>RouteHub Learner</h3><p>React Router Practice Account</p></div></div></div>}

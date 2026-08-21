@@ -1,0 +1,1 @@
+import { Link } from "react-router-dom"; export default function NotFound(){return <section className="empty"><p className="eyebrow">404 ERROR</p><h1>Oops. This route doesn't exist.</h1><p>The <code>path="*"</code> route caught this unknown URL.</p><Link className="btn" to="/">Go Home</Link></section>}

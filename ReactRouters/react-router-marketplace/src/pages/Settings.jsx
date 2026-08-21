@@ -1,0 +1,1 @@
+export default function Settings(){return <div><p className="eyebrow">NESTED ROUTE</p><h1>Settings</h1><p>URL: <code>/dashboard/settings</code></p><div className="concept-card"><h3>Routing Tip</h3><p>The dashboard layout stays visible while only this Outlet content changes.</p></div></div>}

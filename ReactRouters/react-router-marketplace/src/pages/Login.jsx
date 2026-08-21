@@ -1,0 +1,2 @@
+import { useNavigate } from "react-router-dom";
+export default function Login(){const navigate=useNavigate(); function login(){localStorage.setItem("routehubLoggedIn","true");navigate("/dashboard");} return <section className="auth"><p className="eyebrow">PROTECTED ROUTE DEMO</p><h1>Demo Login</h1><p>No real backend is used. Clicking login stores a simple demo value, then <code>useNavigate()</code> sends you to the protected dashboard.</p><button className="btn" onClick={login}>Login & Go to Dashboard →</button></section>}
