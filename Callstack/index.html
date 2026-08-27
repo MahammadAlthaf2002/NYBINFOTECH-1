@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chennai Energy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div>
+        <p>ENERGY</p>
+        <h1>Power Monitor</h1>
+      </div>
+      <button id="refresh">Refresh</button>
+    </header>
+
+    <section class="summary">
+      <div class="card">
+        <span>Today's usage</span>
+        <h2 id="usage">-- kWh</h2>
+      </div>
+      <div class="card">
+        <span>Solar power</span>
+        <h2 id="solar">-- kW</h2>
+      </div>
+      <div class="card">
+        <span>Grid status</span>
+        <h2 id="grid">Checking...</h2>
+      </div>
+    </section>
+
+    <section class="card activity">
+      <div class="title">
+        <div>
+          <span>LIVE ACTIVITY</span>
+          <h2>Energy update</h2>
+        </div>
+        <i id="dot"></i>
+      </div>
+      <p id="message">Getting the latest reading...</p>
+    </section>
+
+    <section class="card demo">
+      <div class="title">
+        <div>
+          <span>JAVASCRIPT</span>
+          <h2>Event Loop</h2>
+        </div>
+        <button id="demoBtn">Run demo</button>
+      </div>
+      <div id="output">
+        <p>Click “Run demo” to see the execution order.</p>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -16,6 +16,8 @@ const personPrototype = {
 const person = Object.create(personPrototype);
 console.log(person.greet());
 
+console.log(person.__proto__)
+
 // 2. __proto__
 // __proto__ exposes an object's prototype link in many JavaScript
 // environments. It is mainly useful for learning/debugging.
