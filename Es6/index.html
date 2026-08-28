@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ES6 Revision - Mini Task Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>ES6+ Mini Task Manager</h1>
+      <p>A small project covering modern JavaScript concepts.</p>
+    </header>
+
+    <section class="stats">
+      <div><strong id="total">0</strong><span>Total</span></div>
+      <div><strong id="completed">0</strong><span>Completed</span></div>
+      <div><strong id="pending">0</strong><span>Pending</span></div>
+    </section>
+
+    <form id="taskForm">
+      <input id="taskInput" type="text" placeholder="Enter a task..." required>
+      <select id="category">
+        <option value="JavaScript">JavaScript</option>
+        <option value="React">React</option>
+        <option value="Practice">Practice</option>
+      </select>
+      <button type="submit">Add Task</button>
+    </form>
+
+    <div class="toolbar">
+      <input id="searchInput" type="search" placeholder="Search tasks...">
+      <button id="clearCompleted" type="button">Clear Completed</button>
+    </div>
+
+    <ul id="taskList"></ul>
+  </main>
+
+  <script type="module" src="./js/app.js"></script>
+</body>
+</html>
