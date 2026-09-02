@@ -1,64 +1,23 @@
-# NYB Infotech — Complete Project
+# Student Profile - JavaScript Objects Mini Task
 
-This version is designed around the NYB Infotech dashboard screenshot and the planned product-price comparison platform.
+A small beginner-friendly task covering:
+- Creating and accessing objects
+- Nested objects
+- Object destructuring
+- Spread operator
+- Rest operator
+- Object.keys()
+- Object.values()
+- Object.entries()
+- Optional chaining
+- Nullish coalescing
 
-## Features
+## How to Run
 
-- Screenshot-inspired dark/neon dashboard
-- Header, left navigation, hero, top categories, promotions, recommendations, restaurants, quick services, right sidebar
-- Product comparison page
-- Product details page
-- Cart with quantity controls and localStorage persistence
-- Checkout page
-- Responsive desktop/tablet/mobile layout
-- Express API at `/api/compare`
-- Marketplace adapter architecture ready for approved/official APIs
-- Demo comparison fallback for development
-
-## Run
-
-1. Open this project folder in terminal.
-2. Install packages:
+Open `student-profile.js` in VS Code and run:
 
 ```bash
-npm install
+node student-profile.js
 ```
 
-3. Start frontend + backend:
-
-```bash
-npm run dev
-```
-
-Frontend: http://localhost:5173  
-API: http://localhost:5000/api/health
-
-## Important about real marketplace prices
-
-The included backend does NOT scrape Amazon/Flipkart pages. It demonstrates the comparison pipeline and uses development data. For real prices, connect approved/official APIs, affiliate feeds, or permitted data providers inside `server/marketplace/`.
-
-## Project structure
-
-```text
-src/
-  components/
-    layout/
-    home/
-    comparison/
-    product/
-    cart/
-    common/
-  context/
-  data/
-  hooks/
-  pages/
-  services/
-  utils/
-
-server/
-  controllers/
-  marketplace/
-  routes/
-  services/
-  utils/
-```
+You can also paste the code into the browser console.

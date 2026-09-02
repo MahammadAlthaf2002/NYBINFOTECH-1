@@ -1,0 +1,33 @@
+OBJECT MASTER - MINI ASSESSMENT
+
+Complete these without copying the existing examples.
+
+1. Create an employee object with:
+   name, role, salary and nested company details.
+
+2. Access the employee's role using dot notation.
+
+3. Access the employee's salary using bracket notation.
+
+4. Use object destructuring to extract name and salary.
+
+5. Use nested destructuring to extract company city.
+
+6. Use the spread operator to create a copy with a new salary.
+
+7. Use the rest operator to collect the remaining properties.
+
+8. Use Object.keys() to print all employee property names.
+
+9. Use Object.values() to print all employee values.
+
+10. Use Object.entries() to print every key and value.
+
+11. Safely access a missing nested property with optional chaining.
+
+12. Use ?? to show "Not provided" when the nested property is null/undefined.
+
+13. Explain in your own words:
+   - Difference between spread and rest.
+   - Difference between ?. and ??.
+   - Difference between Object.keys(), values(), and entries().
