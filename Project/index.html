@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>API Task Manager</title>
+  <link rel="stylesheet" href="./src/style.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>API Task Manager</h1>
+    <p class="subtitle">Fetch API + Storage + Promises + Error Handling</p>
+
+    <section class="card">
+      <h2>Saved User</h2>
+      <p id="savedUser">No user saved.</p>
+      <button id="clearStorage">Clear Storage</button>
+    </section>
+
+    <section class="card">
+      <h2>Create Post (POST)</h2>
+      <form id="postForm">
+        <input id="title" placeholder="Post title" required />
+        <textarea id="body" placeholder="Post body" required></textarea>
+        <button type="submit">Create Post</button>
+      </form>
+      <p id="postMessage"></p>
+    </section>
+
+    <section class="card">
+      <div class="row">
+        <h2>Posts (GET)</h2>
+        <button id="loadPosts">Load Posts</button>
+      </div>
+      <p id="status"></p>
+      <div id="posts"></div>
+    </section>
+  </main>
+
+  <script src="./src/app.js"></script>
+</body>
+</html>
