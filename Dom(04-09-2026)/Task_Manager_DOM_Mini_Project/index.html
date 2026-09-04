@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Manager Mini Project</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header>
+      <h1>Task Manager</h1>
+      <p>DOM + Events + API + Local Storage</p>
+    </header>
+
+    <section class="card">
+      <form id="taskForm">
+        <input id="taskInput" type="text" placeholder="Enter a task..." required maxlength="80">
+        <button type="submit">Add Task</button>
+      </form>
+      <p id="formMessage" class="message"></p>
+    </section>
+
+    <section class="toolbar">
+      <input id="searchInput" type="search" placeholder="Search tasks...">
+      <button id="clearCompletedBtn" type="button">Clear Completed</button>
+      <button id="loadApiBtn" type="button">Load Sample Tasks</button>
+    </section>
+
+    <section class="stats">
+      <div><strong id="totalCount">0</strong><span>Total</span></div>
+      <div><strong id="completedCount">0</strong><span>Completed</span></div>
+      <div><strong id="pendingCount">0</strong><span>Pending</span></div>
+    </section>
+
+    <section class="card">
+      <h2>My Tasks</h2>
+      <ul id="taskList"></ul>
+      <p id="emptyState">No tasks yet. Add your first task!</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
