@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>JavaScript Mini Assessment</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f6f8;
+      color: #17202a;
+    }
+
+    header {
+      background: #17202a;
+      color: white;
+      padding: 24px;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 24px auto;
+      padding: 0 16px;
+    }
+
+    section {
+      background: white;
+      padding: 20px;
+      margin-bottom: 18px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px #0001;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+      );
+      gap: 12px;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      padding: 14px;
+      border-radius: 10px;
+    }
+
+    button,
+    input {
+      padding: 10px 12px;
+      margin: 5px;
+      border: 1px solid #ccd3d9;
+      border-radius: 7px;
+    }
+
+    button {
+      cursor: pointer;
+      background: #17202a;
+      color: white;
+    }
+
+    button:hover {
+      opacity: 0.85;
+    }
+
+    #output,
+    #apiOutput {
+      background: #111827;
+      color: #d1fae5;
+      padding: 14px;
+      min-height: 100px;
+      white-space: pre-wrap;
+      border-radius: 8px;
+      overflow-x: auto;
+    }
+
+    .status {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Senior JavaScript Mini Assessment</h1>
+
+    <p>
+      Async JavaScript + Promises + Fetch API +
+      Modules + Iterators + Generators + Classes + Prototypes
+    </p>
+  </header>
+
+  <main>
+
+    <!-- ASYNC JAVASCRIPT -->
+    <section>
+
+      <h2>1. Async JavaScript</h2>
+
+      <div class="grid">
+
+        <div class="card">
+
+          <h3>setTimeout / clearTimeout</h3>
+
+          <button id="timeoutBtn">
+            Start Timeout
+          </button>
+
+          <button id="cancelTimeoutBtn">
+            Cancel Timeout
+          </button>
+
+        </div>
+
+        <div class="card">
+
+          <h3>setInterval / clearInterval</h3>
+
+          <button id="intervalBtn">
+            Start Counter
+          </button>
+
+          <button id="cancelIntervalBtn">
+            Stop Counter
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PROMISES -->
+    <section>
+
+      <h2>2. Promises</h2>
+
+      <button id="promiseBtn">
+        Run Promise Demo
+      </button>
+
+      <button id="promiseAllBtn">
+        Promise.all()
+      </button>
+
+      <button id="raceBtn">
+        Promise.race()
+      </button>
+
+      <button id="settledBtn">
+        Promise.allSettled()
+      </button>
+
+      <button id="anyBtn">
+        Promise.any()
+      </button>
+
+    </section>
+
+
+    <!-- FETCH API -->
+    <section>
+
+      <h2>3. Fetch API Assessment</h2>
+
+      <p>
+        Test GET, POST, PUT, PATCH and DELETE requests.
+      </p>
+
+      <button id="getBtn">
+        GET
+      </button>
+
+      <button id="postBtn">
+        POST
+      </button>
+
+      <button id="putBtn">
+        PUT
+      </button>
+
+      <button id="patchBtn">
+        PATCH
+      </button>
+
+      <button id="deleteBtn">
+        DELETE
+      </button>
+
+      <p
+        class="status"
+        id="apiStatus"
+      >
+        Ready
+      </p>
+
+    </section>
+
+
+    <!-- CLASS -->
+    <section>
+
+      <h2>4. Class / Object / Prototype</h2>
+
+      <input
+        id="userName"
+        placeholder="Enter user name"
+      />
+
+      <button id="classBtn">
+        Create User
+      </button>
+
+      <div id="classOutput"></div>
+
+    </section>
+
+
+    <!-- ITERATOR -->
+    <section>
+
+      <h2>5. Iterator + Generator</h2>
+
+      <button id="iteratorBtn">
+        Run Iterator
+      </button>
+
+      <button id="generatorBtn">
+        Run Generator
+      </button>
+
+    </section>
+
+
+    <!-- OUTPUT -->
+    <section>
+
+      <h2>Assessment Output</h2>
+
+      <div id="output">
+        Click an assessment button to see the result...
+      </div>
+
+      <h2>API Response</h2>
+
+      <div id="apiOutput">
+        API response will appear here...
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- JavaScript Module -->
+  <script
+    type="module"
+    src="./script.js"
+  ></script>
+
+</body>
+</html>
