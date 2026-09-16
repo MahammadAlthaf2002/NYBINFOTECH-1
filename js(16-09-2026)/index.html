@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>E-Commerce Product Management</title>
+
+<style>
+body{
+    font-family: Arial;
+    padding:20px;
+}
+
+.card{
+    border:1px solid #ccc;
+    padding:15px;
+    margin:10px;
+    border-radius:10px;
+}
+
+button{
+    padding:10px;
+    margin:5px;
+    cursor:pointer;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>Tech Store Dashboard</h1>
+
+
+<button onclick="displayProducts()">Display Products</button>
+
+<button onclick="searchProduct()">Search iPhone</button>
+
+<button onclick="showExpensive()">Expensive Products</button>
+
+<button onclick="sortPrice()">Sort Price</button>
+
+<button onclick="addProduct()">Add Product</button>
+
+
+<h2 id="output"></h2>
+
+
+<div id="products"></div>
+
+
+<script>
+
+
+// =============================
+// PRODUCT DATABASE
+// =============================
+
+
+let products=[
+
+{
+id:1,
+
+name:"iPhone 16",
+
+category:"Mobile",
+
+price:80000,
+
+stock:10,
+
+discount:10,
+
+
+brand:{
+name:"Apple",
+country:"USA"
+},
+
+
+reviews:[
+
+{
+user:"Raj",
+rating:5
+},
+
+{
+user:"Amit",
+rating:4
+}
+
+]
+
+},
+
+
+
+{
+id:2,
+
+name:"MacBook Pro",
+
+category:"Laptop",
+
+price:150000,
+
+stock:5,
+
+discount:5,
+
+
+brand:{
+name:"Apple",
+country:"USA"
+},
+
+
+reviews:[
+
+{
+user:"John",
+rating:5
+}
+
+]
+
+},
+
+
+
+{
+id:3,
+
+name:"Samsung S25",
+
+category:"Mobile",
+
+price:70000,
+
+stock:20,
+
+discount:15,
+
+
+brand:{
+name:"Samsung",
+country:"Korea"
+},
+
+
+reviews:[
+
+{
+user:"Mike",
+rating:4
+}
+
+]
+
+}
+
+];
+
+
+
+// =============================
+// OBJECT METHOD
+// =============================
+
+
+let store={
+
+name:"Tech Store",
+
+location:"Delhi",
+
+
+show(){
+
+console.log(this.name,this.location);
+
+}
+
+};
+
+
+store.show();
+
+
+
+
+// =============================
+// DISPLAY PRODUCTS
+// forEach()
+// =============================
+
+
+function displayProducts(){
+
+
+let html="";
+
+
+products.forEach(product=>{
+
+
+html+=`
+
+<div class="card">
+
+<h3>${product.name}</h3>
+
+Price: ₹${product.price}
+
+<br>
+
+Category:
+${product.category}
+
+<br>
+
+Brand:
+${product.brand.name}
+
+<br>
+
+Country:
+${product.brand.country}
+
+<br>
+
+Stock:
+${product.stock}
+
+</div>
+
+`;
+
+});
+
+
+document.getElementById("products").innerHTML=html;
+
+
+}
+
+
+
+
+// =============================
+// SEARCH PRODUCT
+// find()
+// =============================
+
+
+function searchProduct(){
+
+
+let result=products.find(product=>{
+
+return product.name==="iPhone 16";
+
+});
+
+
+document.getElementById("output").innerHTML=
+
+JSON.stringify(result,null,2);
+
+
+}
+
+
+
+
+// =============================
+// FILTER EXPENSIVE PRODUCTS
+// =============================
+
+
+function showExpensive(){
+
+
+let result=products.filter(product=>{
+
+
+return product.price>70000;
+
+
+});
+
+
+document.getElementById("output").innerHTML=
+
+JSON.stringify(result,null,2);
+
+
+}
+
+
+
+
+// =============================
+// MAP DISCOUNT PRICE
+// =============================
+
+
+let discountProducts=products.map(product=>{
+
+
+return {
+
+name:product.name,
+
+finalPrice:
+
+product.price -
+(product.price*product.discount/100)
+
+};
+
+
+});
+
+
+console.log(discountProducts);
+
+
+
+
+// =============================
+// REDUCE TOTAL STOCK VALUE
+// =============================
+
+
+let totalValue=products.reduce((total,product)=>{
+
+
+return total+(product.price*product.stock);
+
+
+},0);
+
+
+
+console.log(
+
+"Total Inventory Value:",
+
+totalValue
+
+);
+
+
+
+
+// =============================
+// FIND INDEX
+// =============================
+
+
+let index=products.findIndex(product=>{
+
+
+return product.id===2;
+
+
+});
+
+
+console.log("Index:",index);
+
+
+
+
+// =============================
+// SOME()
+// =============================
+
+
+let checkStock=products.some(product=>{
+
+
+return product.stock===0;
+
+
+});
+
+
+console.log("Out Of Stock:",checkStock);
+
+
+
+
+// =============================
+// EVERY()
+// =============================
+
+
+let valid=products.every(product=>{
+
+
+return product.price>0;
+
+
+});
+
+
+console.log(valid);
+
+
+
+
+// =============================
+// SORT PRICE
+// =============================
+
+
+function sortPrice(){
+
+
+let sorted=[...products].sort((a,b)=>{
+
+
+return a.price-b.price;
+
+
+});
+
+
+console.log(sorted);
+
+
+}
+
+
+
+
+// =============================
+// JOIN()
+// =============================
+
+
+let categories=products
+
+.map(product=>product.category)
+
+.join(",");
+
+
+
+console.log(categories);
+
+
+
+
+// =============================
+// FLAT REVIEWS
+// =============================
+
+
+let reviews=
+
+products.map(product=>{
+
+
+return product.reviews;
+
+
+}).flat();
+
+
+
+console.log(reviews);
+
+
+
+
+// =============================
+// REMOVE DUPLICATES
+// =============================
+
+
+let unique=[
+
+...new Set(
+
+products.map(product=>product.category)
+
+)
+
+];
+
+
+console.log(unique);
+
+
+
+
+// =============================
+// OBJECT METHODS
+// =============================
+
+
+console.log(Object.keys(products[0]));
+
+
+console.log(Object.values(products[0]));
+
+
+console.log(Object.entries(products[0]));
+
+
+
+
+// =============================
+// DESTRUCTURING
+// =============================
+
+
+let {
+
+name,
+
+price
+
+}=products[0];
+
+
+console.log(name,price);
+
+
+
+
+// =============================
+// SPREAD UPDATE
+// =============================
+
+
+let updated={
+
+...products[0],
+
+price:85000
+
+};
+
+
+console.log(updated);
+
+
+
+
+// =============================
+// REST
+// =============================
+
+
+let {
+
+reviews,
+
+...basic
+
+}=products[0];
+
+
+console.log(basic);
+
+
+
+
+// =============================
+// SHALLOW COPY
+// =============================
+
+
+let shallow={...products[0]};
+
+
+shallow.brand.name="Changed";
+
+
+console.log(products[0].brand.name);
+
+
+
+
+// =============================
+// DEEP COPY
+// =============================
+
+
+let deep=structuredClone(products[0]);
+
+
+deep.brand.name="New";
+
+
+console.log(products[0].brand.name);
+
+
+
+
+// =============================
+// ADD PRODUCT
+// PUSH()
+// =============================
+
+
+function addProduct(){
+
+
+products.push({
+
+id:4,
+
+name:"Keyboard",
+
+category:"Accessories",
+
+price:3000,
+
+stock:50
+
+
+});
+
+
+console.log(products);
+
+
+displayProducts();
+
+
+}
+
+
+
+// JSON
+
+let jsonData=JSON.stringify(products);
+
+
+console.log(jsonData);
+
+
+
+let objectData=JSON.parse(jsonData);
+
+
+console.log(objectData);
+
+
+
+</script>
+
+
+</body>
+</html>
