@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Async Task Manager</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Async Task Manager</h1>
+        <p>JavaScript Async + Modern JS + OOP Practice</p>
+    </header>
+
+    <main>
+
+        <!-- Task Section -->
+        <section class="card">
+
+            <h2>Task Manager</h2>
+
+            <div class="form">
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter task"
+                >
+
+                <button id="addBtn">Add Task</button>
+            </div>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+
+        <!-- Async Section -->
+        <section class="card">
+
+            <h2>Async JavaScript</h2>
+
+            <button onclick="syncDemo()">Synchronous Demo</button>
+
+            <button onclick="asyncDemo()">Asynchronous Demo</button>
+
+            <button onclick="promiseDemo()">Promise Demo</button>
+
+            <button onclick="eventLoopDemo()">Event Loop Demo</button>
+
+            <p id="asyncOutput
