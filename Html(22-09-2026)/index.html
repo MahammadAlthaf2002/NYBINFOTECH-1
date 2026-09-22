@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML Links, Images, Multimedia, Lists and Tables</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+
+<body>
+
+    <!-- ===================================================== -->
+    <!-- 1. ANCHOR TAGS / LINKS -->
+    <!-- ===================================================== -->
+
+    <h1>1. Anchor Tags and Links</h1>
+
+    <!-- Anchor Tag -->
+    <h2>Anchor Tag</h2>
+
+    <a href="https://www.google.com">
+        Go to Google
+    </a>
+
+
+    <!-- Internal Links -->
+    <h2>Internal Links</h2>
+
+    <a href="#about">Go to About Section</a>
+    <br>
+
+    <a href="#contact">Go to Contact Section</a>
+
+
+    <!-- External Links -->
+    <h2>External Links</h2>
+
+    <a href="https://www.google.com">
+        Google
+    </a>
+
+    <br>
+
+    <a href="https://www.youtube.com">
+        YouTube
+    </a>
+
+
+    <!-- Email Link -->
+    <h2>Email Link</h2>
+
+    <a href="mailto:example@gmail.com">
+        Send Email
+    </a>
+
+
+    <!-- Email Link with Subject -->
+    <h2>Email Link with Subject</h2>
+
+    <a href="mailto:example@gmail.com?subject=Website Enquiry">
+        Send Enquiry
+    </a>
+
+
+    <!-- Telephone Link -->
+    <h2>Telephone Link</h2>
+
+    <a href="tel:+919876543210">
+        Call +91 9876543210
+    </a>
+
+
+    <!-- Opening Link in New Tab -->
+    <h2>Open Link in New Tab</h2>
+
+    <a
+        href="https://www.google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Open Google in New Tab
+    </a>
+
+
+    <!-- ===================================================== -->
+    <!-- 2. INTERNAL LINK TARGET SECTIONS -->
+    <!-- ===================================================== -->
+
+    <hr>
+
+    <h1 id="about">About Section</h1>
+
+    <p>
+        This is the About section.
+        This section can be reached using an internal link.
+    </p>
+
+    <a href="#top">Go to Top</a>
+
+
+    <h1 id="contact">Contact Section</h1>
+
+    <p>
+        This is the Contact section.
+        This section can be reached using an internal link.
+    </p>
+
+    <a href="#top">Go to Top</a>
+
+
+    <!-- ===================================================== -->
+    <!-- 3. IMAGES -->
+    <!-- ===================================================== -->
+
+    <hr>
+
+    <h1>2. Images</h1>
+
+    <!-- Image Tag -->
+    <h2>Image Tag</h2>
+
+    <img
+        src="images/nature.jpg"
+        alt="Beautiful Nature"
+    >
+
+
+    <!-- src -->
+    <h2>src Attribute</h2>
+
+    <img
+        src="images/nature.jpg"
+        alt="Nature Image"
+    >
+
+
+    <!-- alt -->
+    <h2>alt Attribute</h2>
+
+    <img
+        src="images/nature.jpg"
+        alt="A beautiful nature landscape"
+    >
+
+
+    <!-- Width and Height -->
+    <h2>Width and Height</h2>
+
+    <img
+        src="images/nature.jpg"
+        alt="Nature"
+        width="400"
+        height="250"
+    >
+
+
+    <!-- Image Link -->
+    <h2>Image Link</h2>
+
+    <a
+        href="https://www.google.com"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        <img
+            src="images/google.png"
+            alt="Google"
+            width="200"
+        >
+    </a>
+
+
+    <!-- ===================================================== -->
+    <!-- 4. MULTIMEDIA -->
+    <!-- ===================================================== -->
+
+    <hr>
+
+    <h1>3. Multimedia</h1>
+
+
+    <!-- Audio -->
+    <h2>Audio</h2>
+
+    <audio controls>
+        <source
+            src="media/song.mp3"
+            type="audio/mpeg"
+        >
+        Your browser does not support audio.
+    </audio>
+
+
+    <!-- Audio with Loop -->
+    <h2>Audio with Loop</h2>
+
+    <audio controls loop>
+        <source
+            src="media/song.mp3"
+            type="audio/mpeg"
+        >
+        Your browser does not support audio.
+    </audio>
+
+
+    <!-- Video -->
+    <h2>Video</h2>
+
+    <video
+        controls
+        width="500"
+    >
+        <source
+            src="media/video.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support video.
+    </video>
+
+
+    <!-- Video with Autoplay -->
+    <h2>Video with Autoplay</h2>
+
+    <video
+        autoplay
+        muted
+        width="500"
+    >
+        <source
+            src="media/video.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support video.
+    </video>
+
+
+    <!-- Video with Loop -->
+    <h2>Video with Loop</h2>
+
+    <video
+        controls
+        loop
+        width="500"
+    >
+        <source
+            src="media/video.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support video.
+    </video>
+
+
+    <!-- All Video Attributes Together -->
+    <h2>Video - Controls, Autoplay, Loop and Muted</h2>
+
+    <video
+        controls
+        autoplay
+        loop
+        muted
+        width="500"
+    >
+        <source
+            src="media/video.mp4"
+            type="video/mp4"
+        >
+        Your browser does not support video.
+    </video>
+
+
+    <!-- ===================================================== -->
+    <!-- 5. LISTS -->
+    <!-- ===================================================== -->
+
+    <hr>
+
+    <h1>4. Lists</h1>
+
+
+    <!-- Ordered List -->
+    <h2>Ordered List</h2>
+
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ol>
+
+
+    <!-- Unordered List -->
+    <h2>Unordered List</h2>
+
+    <ul>
+        <li>Apple</li>
+        <li>Banana</li>
+        <li>Mango</li>
+        <li>Orange</li>
+    </ul>
+
+
+    <!-- Description List -->
+    <h2>Description List</h2>
+
+    <dl>
+
+        <dt>HTML</dt>
+        <dd>
+            HTML is used to create the structure of a webpage.
+        </dd>
+
+        <dt>CSS</dt>
+        <dd>
+            CSS is used to style a webpage.
+        </dd>
+
+        <dt>JavaScript</dt>
+        <dd>
+            JavaScript is used to add functionality and interactivity.
+        </dd>
+
+    </dl>
+
+
+    <!-- Nested List -->
+    <h2>Nested List</h2>
+
+    <ul>
+
+        <li>
+            Frontend
+
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+
+                <li>
+                    JavaScript Frameworks
+
+                    <ul>
+                        <li>React</li>
+                        <li>Angular</li>
+                        <li>Vue</li>
+                    </ul>
+
+                </li>
+            </ul>
+
+        </li>
+
+
+        <li>
+            Backend
+
+            <ul>
+                <li>Node.js</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+
+        </li>
+
+    </ul>
+
+
+    <!-- ===================================================== -->
+    <!-- 6. TABLES -->
+    <!-- ===================================================== -->
+
+    <hr>
+
+    <h1>5. Tables</h1>
+
+
+    <!-- Basic Table -->
+    <h2>Basic Table</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>Althaf</td>
+            <td>25</td>
+            <td>JavaScript</td>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>24</td>
+            <td>React</td>
+        </tr>
+
+        <tr>
+            <td>Arun</td>
+            <td>26</td>
+            <td>HTML</td>
+        </tr>
+
+    </table>
+
+
+    <!-- Table Caption -->
+    <h2>Table Caption</h2>
+
+    <table border="1">
+
+        <caption>
+            Student Information
+        </caption>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>Althaf</td>
+            <td>25</td>
+            <td>JavaScript</td>
+        </tr>
+
+        <tr>
+            <td>Rahul</td>
+            <td>24</td>
+            <td>React</td>
+        </tr>
+
+    </table>
+
+
+    <!-- Colspan -->
+    <h2>Colspan</h2>
+
+    <table border="1">
+
+        <tr>
+            <th colspan="3">
+                Student Details
+            </th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td>Althaf</td>
+            <td>25</td>
+            <td>React</td>
+        </tr>
+
+    </table>
+
+
+    <!-- Rowspan -->
+    <h2>Rowspan</h2>
+
+    <table border="1">
+
+        <tr>
+            <th>Name</th>
+            <th>Course</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">
+                Althaf
+            </td>
+
+            <td>
+                HTML
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                JavaScript
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- Colspan + Rowspan -->
+    <h2>Colspan and Rowspan Together</h2>
+
+    <table border="1">
+
+        <caption>
+            Employee Details
+        </caption>
+
+        <tr>
+            <th colspan="3">
+                Employee Information
+            </th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <th>Department</th>
+            <th>Skills</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">
+                Althaf
+            </td>
+
+            <td rowspan="2">
+                Development
+            </td>
+
+            <td>
+                HTML
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                JavaScript
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- ===================================================== -->
+    <!-- 7. COMPLETE TABLE -->
+    <!-- ===================================================== -->
+
+    <h2>Complete Table Example</h2>
+
+    <table border="1">
+
+        <caption>
+            Student Course Details
+        </caption>
+
+        <tr>
+            <th colspan="4">
+                Student Information
+            </th>
+        </tr>
+
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Course</th>
+            <th>Duration</th>
+        </tr>
+
+        <tr>
+            <td rowspan="2">
+                Althaf
+            </td>
+
+            <td rowspan="2">
+                25
+            </td>
+
+            <td>
+                HTML
+            </td>
+
+            <td>
+                1 Month
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                JavaScript
+            </td>
+
+            <td>
+                2 Months
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                Rahul
+            </td>
+
+            <td>
+                24
+            </td>
+
+            <td>
+                React
+            </td>
+
+            <td>
+                2 Months
+            </td>
+        </tr>
+
+    </table>
+
+
+    <!-- ===================================================== -->
+    <!-- END -->
+    <!-- ===================================================== -->
+
+    <hr>
+
+    <h2>End of HTML Practice</h2>
+
+    <a href="#top">
+        Back to Top
+    </a>
+
+</body>
+</html>
