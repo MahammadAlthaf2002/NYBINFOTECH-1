@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+</head>
+
+<body>
+
+    <h1>Student Registration Form</h1>
+
+    <form action="/submit" method="post">
+
+        <!-- Personal Information -->
+
+        <fieldset>
+
+            <legend>Personal Information</legend>
+
+            <label for="name">Full Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                required>
+
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required>
+
+            <br><br>
+
+            <label for="password">Password:</label>
+            <input
+                type="password"
+                id="password"
+                name="password"
+                required>
+
+            <br><br>
+
+            <label for="age">Age:</label>
+            <input
+                type="number"
+                id="age"
+                name="age"
+                min="18"
+                max="60"
+                required>
+
+            <br><br>
+
+            <label for="dob">Date of Birth:</label>
+            <input
+                type="date"
+                id="dob"
+                name="dob">
+
+        </fieldset>
+
+        <br>
+
+        <!-- Gender -->
+
+        <fieldset>
+
+            <legend>Gender</legend>
+
+            <input
+                type="radio"
+                id="male"
+                name="gender"
+                value="male">
+
+            <label for="male">Male</label>
+
+            <input
+                type="radio"
+                id="female"
+                name="gender"
+                value="female">
+
+            <label for="female">Female</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Skills -->
+
+        <fieldset>
+
+            <legend>Skills</legend>
+
+            <input
+                type="checkbox"
+                id="html"
+                name="skills"
+                value="html">
+
+            <label for="html">HTML</label>
+
+            <input
+                type="checkbox"
+                id="css"
+                name="skills"
+                value="css">
+
+            <label for="css">CSS</label>
+
+            <input
+                type="checkbox"
+                id="javascript"
+                name="skills"
+                value="javascript">
+
+            <label for="javascript">JavaScript</label>
+
+        </fieldset>
+
+        <br>
+
+        <!-- Course -->
+
+        <label for="course">Select Course:</label>
+
+        <select id="course" name="course">
+
+            <option value="html">HTML</option>
+            <option value="css">CSS</option>
+            <option value="javascript">JavaScript</option>
+            <option value="react">React</option>
+
+        </select>
+
+        <br><br>
+
+        <!-- Message -->
+
+        <label for="message">Address:</label>
+
+        <br>
+
+        <textarea
+            id="message"
+            name="message"
+            rows="5"
+            cols="40"
+            placeholder="Enter your address">
+        </textarea>
+
+        <br><br>
+
+        <!-- File -->
+
+        <label for="resume">Upload Resume:</label>
+
+        <input
+            type="file"
+            id="resume"
+            name="resume">
+
+        <br><br>
+
+        <!-- Buttons -->
+
+        <input type="submit" value="Register">
+
+        <input type="reset" value="Reset">
+
+    </form>
+
+
+    <hr>
+
+
+    <!-- Figure -->
+
+    <figure>
+
+        <img
+            src="https://www.shutterstock.com/shutterstock/photos/212251981/display_1500/stock-photo-modern-hospital-style-building-212251981.jpg"
+            alt="Hospital building"
+            width="300">
+
+        <figcaption>
+            Hospital Building
+        </figcaption>
+
+    </figure>
+
+
+    <!-- Details and Summary -->
+
+    <details>
+
+        <summary>What is HTML?</summary>
+
+        <p>
+            HTML stands for HyperText Markup Language.
+            It is used to structure web pages.
+        </p>
+
+    </details>
+
+
+    <!-- Iframe -->
+
+    <h2>Embedded Content</h2>
+
+    <iframe
+        src="https://google.com"
+        width="600"
+        height="300">
+    </iframe>
+
+</body>
+
+</html>
