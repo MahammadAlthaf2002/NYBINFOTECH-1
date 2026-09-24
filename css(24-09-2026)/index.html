@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Fundamentals Practice</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        .internal-text {
+            color: purple;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         INLINE CSS
+    ========================== -->
+
+    <h1 style="color: red; font-size: 40px;">
+        CSS Fundamentals
+    </h1>
+
+
+    <!-- =========================
+         ELEMENT SELECTOR
+    ========================== -->
+
+    <p>
+        This paragraph is styled using an element selector.
+    </p>
+
+
+    <!-- =========================
+         CLASS SELECTOR
+    ========================== -->
+
+    <div class="card">
+        <h2>Class Selector</h2>
+        <p>
+            This box uses a class selector.
+        </p>
+    </div>
+
+
+    <!-- =========================
+         ID SELECTOR
+    ========================== -->
+
+    <h2 id="main-heading">
+        ID Selector
+    </h2>
+
+
+    <!-- =========================
+         INTERNAL CSS
+    ========================== -->
+
+    <p class="internal-text">
+        This paragraph uses Internal CSS.
+    </p>
+
+
+    <!-- =========================
+         UNIVERSAL SELECTOR
+    ========================== -->
+
+    <div class="universal-example">
+        Universal selector is applied to all elements.
+    </div>
+
+
+    <!-- =========================
+         ATTRIBUTE SELECTOR
+    ========================== -->
+
+    <h2>Attribute Selector</h2>
+
+    <input type="text" placeholder="Enter your name">
+
+    <input type="email" placeholder="Enter your email">
+
+    <input type="password" placeholder="Enter password">
+
+
+    <!-- =========================
+         GROUPING SELECTOR
+    ========================== -->
+
+    <h2>Grouping Selector</h2>
+
+    <h3>This is Heading 3</h3>
+
+    <p>This paragraph uses grouping selector.</p>
+
+
+    <!-- =========================
+         DESCENDANT SELECTOR
+    ========================== -->
+
+    <div class="parent">
+
+        <h2>Parent</h2>
+
+        <p>
+            Direct paragraph inside parent.
+        </p>
+
+        <section>
+            <p>
+                Paragraph inside section.
+            </p>
+        </section>
+
+    </div>
+
+
+    <!-- =========================
+         CHILD SELECTOR
+    ========================== -->
+
+    <div class="child-parent">
+
+        <p>Direct Child 1</p>
+
+        <p>Direct Child 2</p>
+
+        <section>
+            <p>Nested Paragraph</p>
+        </section>
+
+    </div>
+
+
+    <!-- =========================
+         ADJACENT SIBLING
+    ========================== -->
+
+    <div class="siblings">
+
+        <h2>Sibling Heading</h2>
+
+        <p>Immediate paragraph</p>
+
+        <p>Second paragraph</p>
+
+        <p>Third paragraph</p>
+
+    </div>
+
+
+    <!-- =========================
+         GENERAL SIBLING
+    ========================== -->
+
+    <div class="general-siblings">
+
+        <h2>General Sibling Heading</h2>
+
+        <p>Paragraph 1</p>
+
+        <p>Paragraph 2</p>
+
+        <p>Paragraph 3</p>
+
+    </div>
+
+
+    <!-- =========================
+         COLORS
+    ========================== -->
+
+    <section class="colors-section">
+
+        <h2>CSS Colors</h2>
+
+        <p class="color-name">
+            Named Color
+        </p>
+
+        <p class="color-hex">
+            HEX Color
+        </p>
+
+        <p class="color-rgb">
+            RGB Color
+        </p>
+
+        <p class="color-rgba">
+            RGBA Color
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         BACKGROUND
+    ========================== -->
+
+    <section class="background-section">
+
+        <h2>Background Example</h2>
+
+        <p>
+            This section demonstrates background properties.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         BORDER
+    ========================== -->
+
+    <section class="border-section">
+
+        <h2>Border Example</h2>
+
+        <p>
+            This box has border, border-radius and padding.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         WIDTH & HEIGHT
+    ========================== -->
+
+    <section class="size-section">
+
+        <div class="size-box">
+            Width: 300px<br>
+            Height: 150px
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         MARGIN
+    ========================== -->
+
+    <section>
+
+        <h2>Margin Example</h2>
+
+        <div class="margin-box">
+            Margin creates space outside the element.
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         PADDING
+    ========================== -->
+
+    <section>
+
+        <h2>Padding Example</h2>
+
+        <div class="padding-box">
+            Padding creates space inside the element.
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BOX MODEL
+    ========================== -->
+
+    <section>
+
+        <h2>Box Model</h2>
+
+        <div class="box-model">
+            Content
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         BOX-SIZING
+    ========================== -->
+
+    <section>
+
+        <h2>Box Sizing</h2>
+
+        <div class="content-box">
+            content-box
+        </div>
+
+        <br>
+
+        <div class="border-box">
+            border-box
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         OPACITY
+    ========================== -->
+
+    <section>
+
+        <h2>Opacity</h2>
+
+        <div class="opacity-box">
+            Opacity: 0.5
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         IMPORTANT
+    ========================== -->
+
+    <section>
+
+        <h2>!important</h2>
+
+        <p class="important-text">
+            This text demonstrates !important.
+        </p>
+
+    </section>
+
+
+</body>
+
+</html>

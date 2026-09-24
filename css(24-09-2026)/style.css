@@ -1,0 +1,458 @@
+/* =========================================
+   CSS COMMENTS
+========================================= */
+
+/*
+   This is a CSS comment.
+   Browser will ignore this comment.
+*/
+
+
+/* =========================================
+   UNIVERSAL SELECTOR
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   ELEMENT SELECTOR
+========================================= */
+
+p {
+    font-family: Arial, sans-serif;
+}
+
+
+/* =========================================
+   CLASS SELECTOR
+========================================= */
+
+.card {
+    width: 400px;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: lightblue;
+    border: 2px solid blue;
+    border-radius: 10px;
+}
+
+
+/* =========================================
+   ID SELECTOR
+========================================= */
+
+#main-heading {
+    color: darkblue;
+    background-color: lightyellow;
+    padding: 10px;
+}
+
+
+/* =========================================
+   ATTRIBUTE SELECTOR
+========================================= */
+
+input[type="text"] {
+    border: 2px solid blue;
+}
+
+input[type="email"] {
+    border: 2px solid green;
+}
+
+input[type="password"] {
+    border: 2px solid red;
+}
+
+
+/* =========================================
+   GROUPING SELECTOR
+========================================= */
+
+h3,
+.colors-section h2,
+.background-section h2 {
+    color: darkgreen;
+}
+
+
+/* =========================================
+   DESCENDANT SELECTOR
+========================================= */
+
+.parent p {
+    color: red;
+}
+
+
+/*
+   .parent p means:
+
+   Select every <p>
+   anywhere inside .parent
+*/
+
+
+/* =========================================
+   CHILD SELECTOR
+========================================= */
+
+.child-parent > p {
+    color: blue;
+    font-weight: bold;
+}
+
+
+/*
+   Only direct children are selected.
+
+   Nested <p> inside <section>
+   will NOT be selected.
+*/
+
+
+/* =========================================
+   ADJACENT SIBLING SELECTOR
+========================================= */
+
+.siblings h2 + p {
+    color: purple;
+    font-weight: bold;
+}
+
+
+/*
+   Selects only the immediate
+   <p> after h2.
+*/
+
+
+/* =========================================
+   GENERAL SIBLING SELECTOR
+========================================= */
+
+.general-siblings h2 ~ p {
+    color: brown;
+}
+
+
+/*
+   Selects ALL matching <p>
+   siblings after h2.
+*/
+
+
+/* =========================================
+   COLORS
+========================================= */
+
+.color-name {
+    color: red;
+}
+
+.color-hex {
+    color: #0000ff;
+}
+
+.color-rgb {
+    color: rgb(0, 128, 0);
+}
+
+.color-rgba {
+    color: rgba(255, 0, 0, 0.5);
+}
+
+
+/* =========================================
+   BACKGROUNDS
+========================================= */
+
+.background-section {
+    width: 500px;
+    min-height: 200px;
+
+    background-color: lightblue;
+
+    /*
+    If you have an image, you can use:
+
+    background-image: url("image.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    */
+
+    padding: 30px;
+    margin: 30px 0;
+
+    border-radius: 15px;
+}
+
+
+/* =========================================
+   BORDERS
+========================================= */
+
+.border-section {
+    width: 500px;
+
+    border-width: 3px;
+    border-style: solid;
+    border-color: black;
+
+    border-radius: 15px;
+
+    padding: 20px;
+    margin: 30px 0;
+}
+
+
+/*
+   Shorthand version:
+
+   border: 3px solid black;
+*/
+
+
+/* =========================================
+   WIDTH & HEIGHT
+========================================= */
+
+.size-box {
+    width: 300px;
+    height: 150px;
+
+    background-color: lightgreen;
+
+    border: 2px solid green;
+
+    padding: 20px;
+
+    margin: 20px 0;
+}
+
+
+/* =========================================
+   MARGIN
+========================================= */
+
+.margin-box {
+    width: 300px;
+
+    background-color: orange;
+
+    border: 2px solid black;
+
+    padding: 20px;
+
+    /*
+       Space outside the element
+    */
+
+    margin: 50px;
+}
+
+
+/* =========================================
+   PADDING
+========================================= */
+
+.padding-box {
+    width: 300px;
+
+    background-color: lightpink;
+
+    border: 2px solid red;
+
+    /*
+       Space inside the element
+    */
+
+    padding: 40px;
+
+    margin: 20px;
+}
+
+
+/* =========================================
+   BOX MODEL
+========================================= */
+
+.box-model {
+    width: 200px;
+
+    padding: 30px;
+
+    border: 10px solid black;
+
+    margin: 20px;
+
+    background-color: lightblue;
+}
+
+
+/*
+   Box Model:
+
+   Content
+      ↓
+   Padding
+      ↓
+   Border
+      ↓
+   Margin
+*/
+
+
+/* =========================================
+   BOX-SIZING: CONTENT-BOX
+========================================= */
+
+.content-box {
+    width: 300px;
+
+    padding: 30px;
+
+    border: 10px solid blue;
+
+    box-sizing: content-box;
+
+    background-color: lightblue;
+}
+
+
+/*
+   Total width:
+
+   300px content
+   + 60px padding
+   + 20px border
+
+   = 380px
+*/
+
+
+/* =========================================
+   BOX-SIZING: BORDER-BOX
+========================================= */
+
+.border-box {
+    width: 300px;
+
+    padding: 30px;
+
+    border: 10px solid green;
+
+    box-sizing: border-box;
+
+    background-color: lightgreen;
+}
+
+
+/*
+   Total width = 300px
+
+   Width includes:
+
+   Content
+   + Padding
+   + Border
+*/
+
+
+/* =========================================
+   OPACITY
+========================================= */
+
+.opacity-box {
+    width: 300px;
+    height: 100px;
+
+    background-color: blue;
+
+    color: white;
+
+    padding: 30px;
+
+    opacity: 0.5;
+}
+
+
+/*
+   1   = Fully visible
+   0.5 = 50% visible
+   0   = Fully transparent
+*/
+
+
+/* =========================================
+   SPECIFICITY
+========================================= */
+
+p {
+    color: blue;
+}
+
+.specificity-example {
+    color: green;
+}
+
+#specificity-id {
+    color: red;
+}
+
+
+/*
+   Specificity order:
+
+   Element
+       ↓
+   Class
+       ↓
+   ID
+*/
+
+
+/* =========================================
+   !IMPORTANT
+========================================= */
+
+.important-text {
+    color: blue !important;
+}
+
+
+/*
+   !important gives the declaration
+   very high priority.
+*/
+
+
+/* =========================================
+   GENERAL PAGE STYLING
+========================================= */
+
+body {
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+
+    padding: 30px;
+
+    background-color: #f5f5f5;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 20px;
+}
