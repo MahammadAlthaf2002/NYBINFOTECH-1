@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Complete Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+        <h1>CSS Complete Practice</h1>
+        <p>Position • Z-Index • Float • Flexbox • Grid • Responsive Design</p>
+    </header>
+
+
+    <!-- =========================
+         1. CSS POSITIONS
+    ========================== -->
+
+    <section class="section">
+
+        <h2>1. CSS Positions</h2>
+
+        <div class="position-container">
+
+            <div class="position-box static-box">
+                Static
+            </div>
+
+            <div class="position-box relative-box">
+                Relative
+            </div>
+
+            <div class="position-box absolute-parent">
+
+                Parent
+
+                <div class="absolute-box">
+                    Absolute
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="sticky-demo">
+            Sticky Header
+        </div>
+
+        <p>
+            Scroll the page to see the sticky element.
+        </p>
+
+        <div class="large-content">
+            <p>Content 1</p>
+            <p>Content 2</p>
+            <p>Content 3</p>
+            <p>Content 4</p>
+            <p>Content 5</p>
+            <p>Content 6</p>
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         2. Z-INDEX
+    ========================== -->
+
+    <section class="section">
+
+        <h2>2. Z-Index</h2>
+
+        <div class="zindex-container">
+
+            <div class="z-box z-one">
+                Z-Index 1
+            </div>
+
+            <div class="z-box z-two">
+                Z-Index 2
+            </div>
+
+            <div class="z-box z-three">
+                Z-Index 3
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         3. FLOAT
+    ========================== -->
+
+    <section class="section">
+
+        <h2>3. Float & Clear</h2>
+
+        <div class="float-container">
+
+            <img
+                src="https://via.placeholder.com/150"
+                alt="Example"
+                class="float-image"
+            >
+
+            <p>
+                This is an example of CSS float.
+                The image is floated to the left and
+                the text flows around the image.
+                Float was traditionally used for layouts,
+                but today Flexbox and Grid are preferred
+                for most page layouts.
+            </p>
+
+            <div class="clear-element">
+                Clear: Both
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         4. FLEX CONTAINER
+    ========================== -->
+
+    <section class="section">
+
+        <h2>4. Flex Container</h2>
+
+        <div class="flex-container">
+
+            <div class="flex-item">Box 1</div>
+            <div class="flex-item">Box 2</div>
+            <div class="flex-item">Box 3</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         5. FLEX DIRECTION
+    ========================== -->
+
+    <section class="section">
+
+        <h2>5. Flex Direction</h2>
+
+        <div class="flex-direction-container">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+        <p>
+            The boxes are arranged using flex-direction.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         6. JUSTIFY CONTENT
+    ========================== -->
+
+    <section class="section">
+
+        <h2>6. Justify Content</h2>
+
+        <div class="justify-container">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+        <p>
+            justify-content: space-between;
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         7. ALIGN ITEMS
+    ========================== -->
+
+    <section class="section">
+
+        <h2>7. Align Items</h2>
+
+        <div class="align-items-container">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         8. ALIGN CONTENT + WRAP
+    ========================== -->
+
+    <section class="section">
+
+        <h2>8. Align Content + Flex Wrap</h2>
+
+        <div class="wrap-container">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         9. GAP
+    ========================== -->
+
+    <section class="section">
+
+        <h2>9. Gap</h2>
+
+        <div class="gap-container">
+
+            <div>Box 1</div>
+            <div>Box 2</div>
+            <div>Box 3</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         10. FLEX GROW
+    ========================== -->
+
+    <section class="section">
+
+        <h2>10. Flex Grow</h2>
+
+        <div class="grow-container">
+
+            <div class="grow-one">
+                Grow 1
+            </div>
+
+            <div class="grow-two">
+                Grow 2
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         11. FLEX SHRINK
+    ========================== -->
+
+    <section class="section">
+
+        <h2>11. Flex Shrink</h2>
+
+        <div class="shrink-container">
+
+            <div class="shrink-one">
+                Shrink 1
+            </div>
+
+            <div class="shrink-two">
+                Shrink 2
+            </div>
+
+            <div class="shrink-three">
+                Shrink 3
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         12. FLEX BASIS
+    ========================== -->
+
+    <section class="section">
+
+        <h2>12. Flex Basis</h2>
+
+        <div class="basis-container">
+
+            <div class="basis-box">
+                Basis: 200px
+            </div>
+
+            <div class="basis-box">
+                Box 2
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         13. ORDER
+    ========================== -->
+
+    <section class="section">
+
+        <h2>13. Flex Order</h2>
+
+        <div class="order-container">
+
+            <div class="order-one">
+                HTML 1
+            </div>
+
+            <div class="order-two">
+                HTML 2
+            </div>
+
+            <div class="order-three">
+                HTML 3
+            </div>
+
+        </div>
+
+        <p>
+            HTML order: 1 → 2 → 3
+        </p>
+
+        <p>
+            Visual order: 3 → 1 → 2
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         14. CSS GRID
+    ========================== -->
+
+    <section class="section">
+
+        <h2>14. CSS Grid</h2>
+
+        <div class="grid-container">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         15. GRID COLUMNS
+    ========================== -->
+
+    <section class="section">
+
+        <h2>15. Grid Columns</h2>
+
+        <div class="columns-grid">
+
+            <div>Column 1</div>
+            <div>Column 2</div>
+            <div>Column 3</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         16. GRID ROWS
+    ========================== -->
+
+    <section class="section">
+
+        <h2>16. Grid Rows</h2>
+
+        <div class="rows-grid">
+
+            <div>Row 1</div>
+            <div>Row 2</div>
+            <div>Row 3</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         17. GRID AREAS
+    ========================== -->
+
+    <section class="section">
+
+        <h2>17. Grid Areas</h2>
+
+        <div class="areas-grid">
+
+            <header class="area-header">
+                HEADER
+            </header>
+
+            <aside class="area-sidebar">
+                SIDEBAR
+            </aside>
+
+            <main class="area-main">
+                MAIN CONTENT
+            </main>
+
+            <footer class="area-footer">
+                FOOTER
+            </footer>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         18. FR UNIT
+    ========================== -->
+
+    <section class="section">
+
+        <h2>18. fr Unit</h2>
+
+        <div class="fr-grid">
+
+            <div>1fr</div>
+            <div>2fr</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         19. REPEAT
+    ========================== -->
+
+    <section class="section">
+
+        <h2>19. repeat()</h2>
+
+        <div class="repeat-grid">
+
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         20. MINMAX
+    ========================== -->
+
+    <section class="section">
+
+        <h2>20. minmax()</h2>
+
+        <div class="minmax-grid">
+
+            <div>Card 1</div>
+            <div>Card 2</div>
+            <div>Card 3</div>
+            <div>Card 4</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         21. ALIGNMENT
+    ========================== -->
+
+    <section class="section">
+
+        <h2>21. Alignment</h2>
+
+        <div class="alignment-container">
+
+            <div>Centered</div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         22. RESPONSIVE DESIGN
+    ========================== -->
+
+    <section class="section">
+
+        <h2>22. Responsive Design</h2>
+
+        <div class="responsive-container">
+
+            <div>
+                Responsive Card 1
+            </div>
+
+            <div>
+                Responsive Card 2
+            </div>
+
+            <div>
+                Responsive Card 3
+            </div>
+
+        </div>
+
+        <p>
+            Resize the browser to see the layout change.
+        </p>
+
+    </section>
+
+
+    <!-- =========================
+         FIXED BUTTON
+    ========================== -->
+
+    <button class="fixed-button">
+        💬 Chat
+    </button>
+
+
+</body>
+
+</html>
