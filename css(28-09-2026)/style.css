@@ -1,0 +1,45 @@
+/* Element Selector */
+h1 {
+    color: blue;
+}
+
+/* Class Selector */
+.text {
+    color: green;
+    font-size: 20px;
+}
+
+/* Button */
+button {
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Hover Pseudo-class */
+button:hover {
+    background-color: red;
+}
+
+/* Box Model */
+.box {
+    width: 300px;
+
+    /* Content */
+    height: 150px;
+
+    /* Padding */
+    padding: 20px;
+
+    /* Border */
+    border: 5px solid black;
+
+    /* Margin */
+    margin: 30px;
+
+    background-color: lightblue;
+
+    box-sizing: border-box;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Areas</title>
+
+    <style>
+        .box1{
+            width:600px;
+            height:600px;
+            background-color: blue;
+            position: absolute;
+            z-index:1;
+        }
+         .box2{
+            width:500px;
+            height:500px;
+            background-color: rgb(255, 208, 0);
+            position: absolute;
+            z-index: 2;
+        }
+
+         .box3{
+            width:400px;
+            height:400px;
+            background-color: rgb(21, 255, 0);
+            position: absolute;
+            z-index: 3;
+        }
+
+         .box4{
+            margin: 300px;
+            width:300px;
+            height:300px;
+            background-color: rgb(209, 209, 214);
+            position: absolute;
+            z-index: 4;
+        }
+         .box5{
+            display: flex;
+            width:200px;
+            height:200px;
+            margin-left: 200px;
+            margin-top: 200px;
+            background-color:black;
+            align-items: center;
+            position: relative;
+            direction: center;
+            z-index: 10;
+        }
+        .container {
+            display: grid;
+
+            grid-template-columns: 300px 1fr;
+
+            grid-template-areas:
+                "header header"
+                "sidebar sidebar"
+                "footer footer";
+                
+             
+
+
+            gap: 10px;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightblue;
+            padding: 20px;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: lightgreen;
+            padding: 20px;
+          
+        }
+
+        .content {
+            grid-area: content;
+            background-color: lightyellow;
+            padding: 20px;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: lightcoral;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h2>Header</h2>
+        </header>
+
+        <aside class="sidebar">
+            <h3>Sidebar</h3>
+            <p>Home</p>
+            <p>About</p>
+            <p>Contact</p>
+        </aside>
+
+        <main class="content">
+            <h2>Content</h2>
+            <p>This is the main content area.</p>
+        </main>
+
+        <footer class="footer">
+            <p>Footer</p>
+        </footer>
+ 
+    </div>
+
+
+
+    <div class ="box1">Box1</div>
+    <div class ="box2">box2</div>
+     <div class ="box3">box3</div>
+
+      <div class ="box4"></div>
+
+       <div class ="box5">box5</div>
+
+</body>
+</html>
