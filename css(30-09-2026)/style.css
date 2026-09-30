@@ -1,0 +1,400 @@
+/* =========================================
+   BASIC STYLING
+========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background: #f5f5f5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+
+/* =========================================
+   1. RESPONSIVE WEB DESIGN
+========================================= */
+
+.responsive-box {
+    display: flex;
+    gap: 20px;
+}
+
+.responsive-box div {
+    flex: 1;
+    padding: 30px;
+    text-align: center;
+    background: lightblue;
+}
+
+
+/* =========================================
+   2. MOBILE-FIRST DESIGN
+========================================= */
+
+.mobile-card {
+    width: 100%;
+    padding: 20px;
+    background: lightgreen;
+}
+
+
+/* =========================================
+   3. MEDIA QUERIES
+========================================= */
+
+.media-box {
+    padding: 30px;
+    background: lightblue;
+    text-align: center;
+}
+
+
+/* =========================================
+   4. BREAKPOINTS
+========================================= */
+
+.breakpoint-box {
+    padding: 30px;
+    background: orange;
+    text-align: center;
+}
+
+
+/* =========================================
+   5. RESPONSIVE IMAGES
+========================================= */
+
+.responsive-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+/* =========================================
+   6. min-width
+========================================= */
+
+.min-width-box {
+    min-width: 200px;
+    width: 50%;
+    padding: 30px;
+    background: lightcoral;
+}
+
+
+/* =========================================
+   7. max-width
+========================================= */
+
+.max-width-box {
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    background: lightyellow;
+}
+
+
+/* =========================================
+   8. clamp()
+========================================= */
+
+.clamp-heading {
+    font-size: clamp(24px, 5vw, 60px);
+}
+
+.clamp-text {
+    font-size: clamp(16px, 2vw, 24px);
+}
+
+
+/* =========================================
+   9. CSS TRANSITION
+========================================= */
+
+.transition-button {
+    padding: 15px 30px;
+    border: none;
+    background: blue;
+    color: white;
+    cursor: pointer;
+
+    transition: background 0.5s;
+}
+
+.transition-button:hover {
+    background: green;
+}
+
+
+/* =========================================
+   10. CSS TRANSFORM
+========================================= */
+
+.transform-box {
+    width: 150px;
+    padding: 30px;
+    text-align: center;
+    background: orange;
+
+    transition: transform 0.5s;
+}
+
+.transform-box:hover {
+    transform: scale(1.2);
+}
+
+
+/* =========================================
+   11. CSS ANIMATION
+========================================= */
+
+.animation-box {
+    width: 120px;
+    padding: 25px;
+    background: purple;
+    color: white;
+    text-align: center;
+
+    animation: moveBox 3s infinite alternate;
+}
+
+@keyframes moveBox {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+
+}
+
+
+/* =========================================
+   12. @keyframes
+========================================= */
+
+.keyframe-box {
+    width: 120px;
+    padding: 25px;
+    background: red;
+    color: white;
+    text-align: center;
+
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+
+    0% {
+        background: red;
+    }
+
+    50% {
+        background: yellow;
+        color: black;
+    }
+
+    100% {
+        background: green;
+        color: white;
+    }
+
+}
+
+
+/* =========================================
+   13. HOVER EFFECTS
+========================================= */
+
+.hover-card {
+    width: 200px;
+    padding: 40px;
+    background: lightblue;
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+.hover-card:hover {
+    background: orange;
+    transform: translateY(-10px);
+}
+
+
+/* =========================================
+   14. POSITIONING
+========================================= */
+
+.position-parent {
+    position: relative;
+    height: 250px;
+    background: #ddd;
+    padding: 20px;
+}
+
+.position-static {
+    position: static;
+    padding: 15px;
+    background: lightblue;
+}
+
+.position-relative {
+    position: relative;
+    top: 20px;
+    left: 30px;
+
+    width: 120px;
+    padding: 15px;
+    background: lightgreen;
+}
+
+.position-absolute {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+
+    padding: 15px;
+    background: orange;
+}
+
+
+/* =========================================
+   15. FIXED POSITION
+========================================= */
+
+.fixed-button {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+
+    background: black;
+    color: white;
+}
+
+
+/* =========================================
+   16. STICKY POSITION
+========================================= */
+
+.sticky-box {
+    position: sticky;
+    top: 0;
+
+    padding: 20px;
+    background: purple;
+    color: white;
+    text-align: center;
+}
+
+
+/* =========================================
+   17. Z-INDEX
+========================================= */
+
+.zindex-container {
+    position: relative;
+    height: 250px;
+}
+
+.z-box {
+    position: absolute;
+
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.z-one {
+    top: 30px;
+    left: 50px;
+
+    background: red;
+
+    z-index: 1;
+}
+
+.z-two {
+    top: 80px;
+    left: 120px;
+
+    background: blue;
+    color: white;
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   RESPONSIVE / MEDIA QUERY
+========================================= */
+
+/* Mobile */
+@media (max-width: 600px) {
+
+    .responsive-box {
+        flex-direction: column;
+    }
+
+    .mobile-card {
+        width: 100%;
+    }
+
+    .media-box {
+        background: lightgreen;
+    }
+
+    .breakpoint-box {
+        background: lightcoral;
+    }
+
+}
+
+
+/* Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+
+    .media-box {
+        background: orange;
+    }
+
+}
+
+
+/* Desktop */
+@media (min-width: 901px) {
+
+    .media-box {
+        background: lightblue;
+    }
+
+}
