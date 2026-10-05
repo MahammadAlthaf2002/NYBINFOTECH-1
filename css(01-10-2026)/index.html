@@ -1,0 +1,634 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>HTML CSS Practice</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+
+        <div class="container header-content">
+
+            <h1 class="logo">TechLearn</h1>
+
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#html">HTML</a></li>
+                    <li><a href="#css">CSS</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO -->
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="container hero-content">
+
+                <div class="hero-text">
+
+                    <p class="label">HTML + CSS PRACTICE</p>
+
+                    <h2>Learn HTML & CSS</h2>
+
+                    <p>
+                        A complete practice page covering
+                        HTML elements and important CSS concepts.
+                    </p>
+
+                    <div class="buttons">
+
+                        <a href="#html" class="btn primary">
+                            Learn HTML
+                        </a>
+
+                        <a href="#css" class="btn secondary">
+                            Learn CSS
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-card">
+
+                    <h3>HTML</h3>
+
+                    <p>Structure</p>
+
+                    <div class="circle"></div>
+
+                    <h3>CSS</h3>
+
+                    <p>Design</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTML STRUCTURE -->
+        <section id="html" class="section">
+
+            <div class="container">
+
+                <p class="label">HTML</p>
+
+                <h2>HTML Structure</h2>
+
+                <p>
+                    HTML is used to create the structure
+                    and content of a webpage.
+                </p>
+
+
+                <div class="cards">
+
+                    <article class="card">
+
+                        <h3>Semantic HTML</h3>
+
+                        <p>
+                            Header, nav, main, section,
+                            article, aside and footer.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>Headings</h3>
+
+                        <h4>Heading Example</h4>
+
+                        <p>
+                            Paragraph text is written
+                            using the p element.
+                        </p>
+
+                    </article>
+
+
+                    <article class="card">
+
+                        <h3>Links</h3>
+
+                        <a href="#contact">
+                            Go to Contact
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IMAGE -->
+        <section class="section light">
+
+            <div class="container">
+
+                <p class="label">IMAGE</p>
+
+                <h2>Images</h2>
+
+                <img
+                    class="main-image"
+                    src="https://picsum.photos/800/400"
+                    alt="Sample image"
+                >
+
+            </div>
+
+        </section>
+
+
+        <!-- LISTS -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="label">LISTS</p>
+
+                <h2>HTML Lists</h2>
+
+                <div class="cards">
+
+                    <div class="card">
+
+                        <h3>Unordered List</h3>
+
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                        </ul>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Ordered List</h3>
+
+                        <ol>
+                            <li>Learn HTML</li>
+                            <li>Learn CSS</li>
+                            <li>Learn JavaScript</li>
+                            <li>Learn React</li>
+                        </ol>
+
+                    </div>
+
+
+                    <div class="card">
+
+                        <h3>Description List</h3>
+
+                        <dl>
+
+                            <dt>HTML</dt>
+                            <dd>Webpage structure</dd>
+
+                            <dt>CSS</dt>
+                            <dd>Webpage styling</dd>
+
+                        </dl>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TABLE -->
+        <section class="section light">
+
+            <div class="container">
+
+                <p class="label">TABLE</p>
+
+                <h2>Student Table</h2>
+
+                <div class="table-wrapper">
+
+                    <table>
+
+                        <thead>
+
+                            <tr>
+                                <th>Name</th>
+                                <th>Age</th>
+                                <th>Course</th>
+                                <th>Result</th>
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+
+                            <tr>
+                                <td>Althaf</td>
+                                <td>22</td>
+                                <td>HTML</td>
+                                <td>Good</td>
+                            </tr>
+
+                            <tr>
+                                <td>Rahul</td>
+                                <td>23</td>
+                                <td>CSS</td>
+                                <td>Excellent</td>
+                            </tr>
+
+                            <tr>
+                                <td>Priya</td>
+                                <td>21</td>
+                                <td>React</td>
+                                <td>Good</td>
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FORM -->
+        <section id="contact" class="section">
+
+            <div class="container">
+
+                <p class="label">FORM</p>
+
+                <h2>Contact Form</h2>
+
+                <form class="form">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="course">
+                            Course
+                        </label>
+
+                        <select id="course">
+
+                            <option>HTML</option>
+                            <option>CSS</option>
+                            <option>JavaScript</option>
+                            <option>React</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            rows="5"
+                            placeholder="Enter message">
+                        </textarea>
+
+                    </div>
+
+
+                    <button class="btn primary" type="submit">
+                        Submit
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+
+        <!-- MULTIMEDIA -->
+        <section class="section light">
+
+            <div class="container">
+
+                <p class="label">MULTIMEDIA</p>
+
+                <h2>Audio and Video</h2>
+
+                <div class="media">
+
+                    <div class="media-card">
+
+                        <h3>Audio</h3>
+
+                        <audio controls>
+                            <source src="audio.mp3"
+                                    type="audio/mpeg">
+                        </audio>
+
+                    </div>
+
+
+                    <div class="media-card">
+
+                        <h3>Video</h3>
+
+                        <video controls>
+                            <source src="video.mp4"
+                                    type="video/mp4">
+                        </video>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- IFRAME -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="label">IFRAME</p>
+
+                <h2>Iframe</h2>
+
+                <iframe
+                    class="iframe"
+                    src="https://www.openstreetmap.org/export/embed.html"
+                    title="Map">
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- ENTITIES -->
+        <section class="section light">
+
+            <div class="container">
+
+                <p class="label">HTML ENTITIES</p>
+
+                <h2>Special Characters</h2>
+
+                <div class="entities">
+
+                    <span>&lt;</span>
+                    <span>&gt;</span>
+                    <span>&amp;</span>
+                    <span>&copy;</span>
+                    <span>&reg;</span>
+                    <span>&nbsp;</span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- FLEXBOX -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="label">FLEXBOX</p>
+
+                <h2>Flexbox</h2>
+
+                <p>
+                    Flexbox is mainly used for
+                    one-dimensional layouts.
+                </p>
+
+                <div class="flex-container">
+
+                    <div>Box 1</div>
+                    <div>Box 2</div>
+                    <div>Box 3</div>
+                    <div>Box 4</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GRID -->
+        <section class="section light">
+
+            <div class="container">
+
+                <p class="label">GRID</p>
+
+                <h2>CSS Grid</h2>
+
+                <p>
+                    Grid is mainly used for
+                    two-dimensional layouts.
+                </p>
+
+                <div class="grid-container">
+
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- POSITION -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="label">POSITION</p>
+
+                <h2>Position and Z-Index</h2>
+
+                <div class="position-container">
+
+                    <div class="box relative-box">
+                        Relative
+                    </div>
+
+                    <div class="box absolute-box">
+                        Absolute
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- TRANSITION + TRANSFORM -->
+        <section class="section light">
+
+            <div class="container">
+
+                <p class="label">
+                    TRANSITION + TRANSFORM
+                </p>
+
+                <h2>CSS Effects</h2>
+
+                <div class="effects">
+
+                    <div class="effect-card">
+                        Hover Me
+                    </div>
+
+                    <div class="transform-card">
+                        Transform
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ANIMATION -->
+        <section class="section">
+
+            <div class="container">
+
+                <p class="label">ANIMATION</p>
+
+                <h2>CSS Animation</h2>
+
+                <div class="animation-area">
+
+                    <div class="animation-box">
+                        Moving
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESPONSIVE -->
+        <section class="section light">
+
+            <div class="container">
+
+                <p class="label">RESPONSIVE DESIGN</p>
+
+                <h2>Responsive Design</h2>
+
+                <p>
+                    Resize the browser to see the layout change.
+                </p>
+
+                <div class="responsive">
+
+                    <div>Desktop</div>
+                    <div>Tablet</div>
+                    <div>Mobile</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 TechLearn
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
+```
