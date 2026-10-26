@@ -1,0 +1,366 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Fundamentals Mini Task</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f5f9;
+      color: #202938;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #182b49;
+      color: white;
+      padding: 30px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      margin: 0 0 8px;
+    }
+
+    header p {
+      margin: 0;
+      color: #dbe5f5;
+    }
+
+    main {
+      max-width: 1000px;
+      margin: 25px auto;
+      padding: 0 16px;
+    }
+
+    .intro {
+      background: white;
+      padding: 18px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 8px #0000000a;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #1b4f91;
+      font-size: 21px;
+    }
+
+    h3 {
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    label {
+      display: block;
+      font-weight: bold;
+      margin: 12px 0 5px;
+    }
+
+    input, select {
+      width: 100%;
+      max-width: 450px;
+      padding: 10px;
+      border: 1px solid #cbd3df;
+      border-radius: 6px;
+      font-size: 15px;
+      background: white;
+    }
+
+    button {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      border-radius: 6px;
+      cursor: pointer;
+      margin: 10px 6px 0 0;
+      font-size: 14px;
+    }
+
+    button:hover {
+      background: #1749b5;
+    }
+
+    .secondary {
+      background: #475569;
+    }
+
+    .output {
+      background: #111827;
+      color: #d1fae5;
+      padding: 15px;
+      border-radius: 7px;
+      min-height: 45px;
+      white-space: pre-wrap;
+      overflow-wrap: anywhere;
+      font-family: Consolas, monospace;
+      margin-top: 15px;
+    }
+
+    .hint {
+      color: #5b6472;
+      font-size: 14px;
+    }
+
+    .topic-list {
+      padding-left: 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #64748b;
+    }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 22px 14px;
+      }
+
+      .card {
+        padding: 16px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>JavaScript Fundamentals</h1>
+    <p>Beginner Practice & Mini Assessment</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Today's Mini Task</h2>
+      <p>
+        Practice JavaScript fundamentals using one interactive application.
+        Enter values, click the buttons and observe the results.
+      </p>
+
+      <ul class="topic-list">
+        <li>Variables, scope, hoisting and TDZ</li>
+        <li>Data types, conversion and coercion</li>
+        <li>Operators and conditional statements</li>
+        <li>Loops, break and continue</li>
+        <li>Optional chaining and nullish coalescing</li>
+        <li>Basic logical programming problems</li>
+      </ul>
+    </section>
+
+    <!-- TASK 1: VARIABLES, SCOPE AND HOISTING -->
+    <section class="card">
+      <h2>Task 1: Variables, Scope & Hoisting</h2>
+
+      <p>
+        Practice var, let, const, global scope, function scope,
+        block scope, hoisting and the Temporal Dead Zone.
+      </p>
+
+      <button onclick="runVariables()">Run Variable Examples</button>
+
+      <div id="variableOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- TASK 2: DATA TYPES -->
+    <section class="card">
+      <h2>Task 2: JavaScript Data Types</h2>
+
+      <p>
+        Learn primitive types, objects, arrays and the typeof operator.
+      </p>
+
+      <button onclick="runDataTypes()">Check Data Types</button>
+
+      <div id="dataTypeOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- TASK 3: TYPE CONVERSION -->
+    <section class="card">
+      <h2>Task 3: Type Conversion & Coercion</h2>
+
+      <label for="conversionValue">Enter a value</label>
+      <input
+        id="conversionValue"
+        type="text"
+        placeholder="Example: 100"
+      />
+
+      <button onclick="runConversion()">Convert Value</button>
+
+      <div id="conversionOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- TASK 4: OPERATORS -->
+    <section class="card">
+      <h2>Task 4: Operators & Calculator</h2>
+
+      <label for="firstNumber">First number</label>
+      <input id="firstNumber" type="number" value="20" />
+
+      <label for="secondNumber">Second number</label>
+      <input id="secondNumber" type="number" value="5" />
+
+      <label for="operator">Select operator</label>
+      <select id="operator">
+        <option value="+">Addition (+)</option>
+        <option value="-">Subtraction (-)</option>
+        <option value="*">Multiplication (*)</option>
+        <option value="/">Division (/)</option>
+        <option value="%">Remainder (%)</option>
+        <option value="**">Exponentiation (**)</option>
+      </select>
+
+      <button onclick="runCalculator()">Calculate</button>
+      <button class="secondary" onclick="runOperatorExamples()">
+        Other Operator Examples
+      </button>
+
+      <div id="operatorOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- TASK 5: CONDITIONALS AND SWITCH -->
+    <section class="card">
+      <h2>Task 5: Conditions & Switch</h2>
+
+      <label for="ageInput">Enter your age</label>
+      <input id="ageInput" type="number" value="24" />
+
+      <button onclick="checkAge()">Check Age</button>
+
+      <label for="marksInput">Enter marks (0–100)</label>
+      <input id="marksInput" type="number" value="80" />
+
+      <button onclick="checkGrade()">Calculate Grade</button>
+
+      <label for="dayInput">Choose a day number (1–7)</label>
+      <input id="dayInput" type="number" value="3" />
+
+      <button onclick="checkDay()">Check Day Using Switch</button>
+
+      <div id="conditionOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- TASK 6: LOOPS -->
+    <section class="card">
+      <h2>Task 6: Loops, Break & Continue</h2>
+
+      <p>
+        Compare for, while and do...while. Then see how break and
+        continue affect loop execution.
+      </p>
+
+      <button onclick="runLoops()">Run All Loop Examples</button>
+
+      <div id="loopOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- TASK 7: OPTIONAL CHAINING -->
+    <section class="card">
+      <h2>Task 7: Optional Chaining & Nullish Coalescing</h2>
+
+      <p>
+        Safely read missing object properties and supply fallback values.
+      </p>
+
+      <button onclick="runOptionalChaining()">Run Example</button>
+
+      <div id="optionalOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- TASK 8: LOGICAL PROBLEMS -->
+    <section class="card">
+      <h2>Task 8: Logical Programming Problems</h2>
+
+      <label for="wordInput">Enter a word or sentence</label>
+      <input id="wordInput" type="text" value="madam" />
+
+      <button onclick="reverseText()">Reverse Text</button>
+      <button onclick="checkPalindrome()">Check Palindrome</button>
+
+      <label for="numberInput">Enter a non-negative integer</label>
+      <input id="numberInput" type="number" min="0" value="5" />
+
+      <button onclick="calculateFactorial()">Calculate Factorial</button>
+      <button onclick="checkPrime()">Check Prime</button>
+
+      <label for="largestA">First number</label>
+      <input id="largestA" type="number" value="15" />
+
+      <label for="largestB">Second number</label>
+      <input id="largestB" type="number" value="45" />
+
+      <label for="largestC">Third number</label>
+      <input id="largestC" type="number" value="30" />
+
+      <button onclick="findLargest()">Find Largest</button>
+
+      <div id="logicOutput" class="output">
+        Your result will appear here.
+      </div>
+    </section>
+
+    <!-- ASSESSMENT -->
+    <section class="card">
+      <h2>Task 9: Your Assessment</h2>
+
+      <p>Try these without copying the solutions from script.js.</p>
+
+      <ol>
+        <li>Create a variable using each of var, let and const.</li>
+        <li>Explain why let is block-scoped but var is not.</li>
+        <li>Display all primitive types using typeof.</li>
+        <li>Predict the results of "5" + 2 and "5" - 2.</li>
+        <li>Build an even-or-odd checker.</li>
+        <li>Create a calculator using switch.</li>
+        <li>Print numbers from 1 to 20 using a loop.</li>
+        <li>Skip odd numbers using continue.</li>
+        <li>Stop a loop using break.</li>
+        <li>Use ?. and ?? with a nested object.</li>
+        <li>Write a palindrome and factorial program.</li>
+      </ol>
+
+      <button class="secondary" onclick="resetAllOutputs()">
+        Clear All Results
+      </button>
+    </section>
+  </main>
+
+  <footer>
+    JavaScript Fundamentals Mini Assessment
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
